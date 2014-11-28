@@ -105,7 +105,7 @@ public class PR2 extends javax.swing.JFrame {
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("PR2");
         setBounds(new java.awt.Rectangle(300, 200, 0, 0));
         addWindowListener(new java.awt.event.WindowAdapter() {
