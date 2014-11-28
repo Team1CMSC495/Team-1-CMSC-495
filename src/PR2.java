@@ -19,11 +19,13 @@ public class PR2 extends javax.swing.JFrame {
                             database.FromText(thisLine);
                         } catch (IllegalFormat iee) {
                             System.out.println(iee.getMessage());
+                            fromBackUp();
                         }
                     }
 
                 }
             } catch (IOException ioe) {
+                fromBackUp();
             }
             //donot use index 0 of 2 lists
             lift.addItem("Lifts");
