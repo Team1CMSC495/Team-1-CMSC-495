@@ -139,4 +139,4 @@ w : Whitten : 0 : 0 : 0 : Five rounds for time of-22 Kettlebell swings; 2 pood-2
 w : Wilmot : 0 : 0 : 0 : Six rounds for time of-50 Squats-25 Ring dips :  : www.crossfit.com/mt-archive2/007642.html
 w : Wittman : 0 : 0 : 0 : "Seven rounds for time of-1.5 pood Kettlebell swing; 15 reps-95 pound Power clean; 15 reps-15 Box jumps; 24"" box" :  : www.crossfit.com/mt-archive2/007434.html
 w : Wood : 0 : 0 : 0 : "5 Rounds for time of-Run 400 meters-10 Burpee box jumps; 24"" box-95 pound Sumo deadlift highpull; 10 reps-95 pound Thruster; 10 reps-Rest 1 minute" :  : www.crossfit.com/mt-archive2/008043.html
-// : Last Update was = 11/28/2014 10:01:37
+// : Last Update was = 11/28/2014 10:43:14
