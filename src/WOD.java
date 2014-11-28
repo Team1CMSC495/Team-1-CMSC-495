@@ -14,6 +14,10 @@ import java.io.*;
 import java.util.StringTokenizer; 
 import java.io.Serializable;
 import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class WOD extends javax.swing.JFrame {
 
@@ -180,7 +184,7 @@ public class WOD extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         updateSecond = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("WOD Window");
         setMaximumSize(new java.awt.Dimension(2147483647, 2047483047));
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -258,6 +262,11 @@ public class WOD extends javax.swing.JFrame {
         wodURL.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         wodURL.setForeground(new java.awt.Color(0, 204, 102));
         wodURL.setText("jLabel14");
+        wodURL.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                wodURLMouseClicked(evt);
+            }
+        });
 
         wodContent.setColumns(20);
         wodContent.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -457,6 +466,21 @@ public class WOD extends javax.swing.JFrame {
         wodParent.show();
         wodParent.enable(true);
     }//GEN-LAST:event_jButton3MouseClicked
+
+    private void wodURLMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_wodURLMouseClicked
+        try {
+         //Set your page url in this string. For eg, I m using URL for Google Search engine
+         String WODurl = "http://" + wodURL.getText();
+         java.awt.Desktop.getDesktop().browse(java.net.URI.create(WODurl));
+         }
+        catch (java.io.IOException e) {
+           System.out.println(e.getMessage());
+       }
+
+
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_wodURLMouseClicked
 
     /**
      * @param args the command line arguments
