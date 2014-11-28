@@ -1,14 +1,5 @@
-import java.util.ArrayList;
 import java.io.*;
-import java.util.*;
-import java.util.Date;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.awt.*;
-import javax.swing.*;
 import java.awt.event.*;
-import javax.swing.ComboBoxModel;
 
 public class PR2 extends javax.swing.JFrame {
 
@@ -33,21 +24,54 @@ public class PR2 extends javax.swing.JFrame {
 
                 }
             } catch (IOException ioe) {
-                ioe.printStackTrace();
             }
             //donot use index 0 of 2 lists
             lift.addItem("Lifts");
             wod.addItem("WODs");   
            
-            for (int i = 0; i < database.liftData.size(); i++) {
-                lift.addItem(database.liftData.get(i).getLiftName());
-            }
+        for (Lift liftData : database.liftData) {
+            lift.addItem(liftData.getLiftName());
+        }
 
-            for (int i = 0; i < database.wodData.size(); i++) {
-                wod.addItem(database.wodData.get(i).getWodName());
-            } 
+        for (WOD wodData : database.wodData) {
+            wod.addItem(wodData.getWodName());
+        } 
     }
     
+    // reads data fom backup.txt file for error handling
+    public void fromBackUp()
+    {
+
+            String thisLine;
+            try {
+                BufferedReader bufIn = new BufferedReader(new FileReader("backup.txt"));
+
+                while ((thisLine = bufIn.readLine()) != null) {
+                    if (thisLine.trim().length() != 0) {
+                        try {
+                            database.FromText(thisLine);
+                        } catch (IllegalFormat iee) {
+                            System.out.println(iee.getMessage());
+                        }
+                    }
+
+                }
+            } catch (IOException ioe) {
+            }
+
+           
+        for (Lift liftData : database.liftData) {
+            String liftCopy = liftData.getLiftName();
+            lift.addItem(liftCopy);
+        }
+
+        for (WOD wodData : database.wodData) {
+            String wodCopy = wodData.getWodName();
+            wod.addItem(wodCopy);
+        }
+
+    }
+
     public PR2() {
         initComponents();
         updatePR2();  
@@ -149,6 +173,7 @@ public class PR2 extends javax.swing.JFrame {
 
     private void closeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeActionPerformed
         database.toTextFile();
+     
         this.dispose();       
     }//GEN-LAST:event_closeActionPerformed
 
@@ -213,6 +238,7 @@ public class PR2 extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new PR2().setVisible(true);
             }
