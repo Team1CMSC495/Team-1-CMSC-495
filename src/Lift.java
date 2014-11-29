@@ -15,6 +15,7 @@ import java.util.StringTokenizer;
 import java.io.Serializable;
 import java.io.*;
 import java.text.DecimalFormat;
+import javax.swing.JOptionPane;
 
 public class Lift extends javax.swing.JFrame implements Serializable {
 
@@ -112,7 +113,7 @@ public class Lift extends javax.swing.JFrame implements Serializable {
         jScrollPane1 = new javax.swing.JScrollPane();
         displayIncrements = new javax.swing.JTextArea();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Lift Window");
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
@@ -250,6 +251,8 @@ public class Lift extends javax.swing.JFrame implements Serializable {
     private void Change_BtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Change_BtnMouseClicked
         // add your code to change 1RM
         String changeOneRepMax = changeRM.getText();
+        int validate = validate1RM(changeOneRepMax);
+        if (validate != 1) return;
         for(int i = 0; i < ft.liftData.size(); i++)
         {
             if(ft.liftData.get(i).getLiftName().compareTo(item) == 0)
@@ -266,6 +269,25 @@ public class Lift extends javax.swing.JFrame implements Serializable {
         ft.toTextFile();
     }//GEN-LAST:event_Change_BtnMouseClicked
 
+    public static Integer validate1RM(String text1RM) {
+        String errorMessage = "1RM must be a whole nummber between 0 and 3000.  Please Correct this entry and try again.";
+        int int1RM;
+        try {
+            int RM1 = Integer.parseInt(text1RM);
+            int1RM = RM1;
+            } catch (NumberFormatException e) {
+                invalidInput(errorMessage);
+                return 0;
+            }
+        if (int1RM < 0 || int1RM > 3000) {
+            invalidInput(errorMessage); 
+            return 0;
+        } else return 1;
+    }
+        
+    public static void invalidInput(String msg) {
+        JOptionPane.showMessageDialog(null, msg, "Invalid Entry", JOptionPane.ERROR_MESSAGE);
+    }
     /**
      * @param args the command line arguments
      */
