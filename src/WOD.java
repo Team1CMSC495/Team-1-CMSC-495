@@ -18,6 +18,7 @@ import java.net.HttpURLConnection;
 import java.net.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 public class WOD extends javax.swing.JFrame {
 
@@ -436,7 +437,8 @@ public class WOD extends javax.swing.JFrame {
         String newhour = updateHour.getText();
         String newminute = updateMinute.getText();
         String newsecond = updateSecond.getText();
-        
+        int validate = validateWOD(note, newhour, newminute, newsecond);
+        if (validate != 1) return;
         for(int i = 0; i < ft.wodData.size(); i++)
         {
             if(ft.wodData.get(i).getWodName().compareTo(item) == 0)
@@ -456,6 +458,56 @@ public class WOD extends javax.swing.JFrame {
         ft.toTextFile();
     }//GEN-LAST:event_updateNote_BtnMouseClicked
 
+    public static Integer validateWOD(String note, String hour, String min, String sec) {
+        String error1 = "Notes cannot contain the following reserved characters:  Colons (:), Quotation Marks (\").\n";
+        String error2 = "Hours must be a whole number between 00-12.\n";
+        String error3 = "Minutes must be a whole number between 00-59.\n";
+        String error4 = "Seconds must be a whole number between 00-59.\n";
+        String errorOutput = "Please correct the following errors and try again: \n";
+        int intHour, intMin, intSec;
+        if (!hour.equals("")) {
+            try {
+                intHour = Integer.parseInt(hour);
+                if (intHour < 0 || intHour > 12) {
+                    errorOutput = errorOutput + error2;}
+                } catch (NumberFormatException e) {
+                    errorOutput = errorOutput + error2;
+                }
+        }
+        if (!min.equals("")) {
+            try {
+                intMin = Integer.parseInt(min);
+                if (intMin < 0 || intMin > 59) {
+                    errorOutput = errorOutput + error3;}
+            } catch (NumberFormatException e) {
+                errorOutput = errorOutput + error3;}
+        }
+        if (!sec.equals("")) {
+            try {
+                intSec = Integer.parseInt(sec);
+                if (intSec < 0 || intSec > 59) {
+                    errorOutput = errorOutput + error4;}
+            } catch (NumberFormatException e) {
+                errorOutput = errorOutput + error4;}
+        }
+        for(int i = 0; i < note.length(); i++) {
+            char c = note.charAt(i);
+            if(c == ':' || c =='"') {
+                errorOutput = errorOutput + error1;}
+        }
+        if (!errorOutput.equals("Please correct the following errors and try again: \n")) {
+            invalidInput(errorOutput);
+            return 0;}
+        else return 1;
+    }
+    
+    public static void invalidInput(String msg) {
+        JOptionPane.showMessageDialog(null, msg, "Invalid Entry", JOptionPane.ERROR_MESSAGE);
+    }
+
+        
+
+    
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
