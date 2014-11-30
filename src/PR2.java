@@ -1,3 +1,8 @@
+/**
+ * PR2.java class creates a Lift object and a the lift GUI for the user interaction with the Lift object
+ * @Basic lift object created by Luis Dall, all GUI components and created by Tracy Devault, Error handling created by Stephen Blackburn
+ */
+
 import java.io.*;
 import java.awt.event.*;
 
@@ -179,7 +184,7 @@ public class PR2 extends javax.swing.JFrame {
         this.dispose();       
     }//GEN-LAST:event_closeActionPerformed
 
-   
+  //Calling Lift GUI
 //GEN-FIRST:event_liftItemStateChanged
     private void liftItemStateChanged(java.awt.event.ItemEvent evt) {
         // TODO add your handling code here:
@@ -193,6 +198,7 @@ public class PR2 extends javax.swing.JFrame {
         } 
     }//GEN-LAST:event_liftItemStateChanged
 
+    //calling WOD GUI
     private void wodItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_wodItemStateChanged
         // TODO add your handling code here:
         if((evt.getStateChange() == ItemEvent.SELECTED)&& wod.getSelectedIndex() != 0){
