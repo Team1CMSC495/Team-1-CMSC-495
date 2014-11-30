@@ -15,16 +15,15 @@ The FromText class will contain an arraylist of Lift objects and an arraylist of
 
 public class FromText
 {
-   ArrayList<Lift> liftData = new ArrayList<Lift>(); //to hold the Lifts
-   ArrayList<WOD> wodData = new ArrayList<WOD>(); //to hold the Lifts
+   ArrayList<Lift> liftData = new ArrayList<>(); //to hold the Lifts
+   ArrayList<WOD> wodData = new ArrayList<>(); //to hold the Lifts
 
      
    public boolean FromText(String newData) throws IllegalFormat
    { 
       String originalData = newData;
       StringTokenizer data = new StringTokenizer(originalData, ":");    // create a tokenizer
-      int tokenCount = data.countTokens();    // count tokens
-     
+           
       String check = data.nextToken();
       
       
@@ -76,30 +75,28 @@ public class FromText
         try {
             File file = new File("master.txt");
             FileWriter fw = new FileWriter(file.getAbsoluteFile());
-            BufferedWriter bw = new BufferedWriter(fw);
-            bw.write("// : sample data file for PR2 software application\n"
-                    + "// : Luis Dall\n"
-                    + "// : November 5, 2014\n"
-                    + "// : Lift format\n"
-                    + "// : l :<name>:<1 rep max>\n"
-                    + "// :  name                 1 rep max)\n");
-
-            for (int j = 0; j < liftData.size(); j++) {
-                bw.write(liftData.get(j).toString() + "\n");
+            try (BufferedWriter bw = new BufferedWriter(fw)) {
+                bw.write("// : sample data file for PR2 software application\n"
+                        + "// : Stephen Blackburn\n"
+                        + "// : November 23, 2014\n"
+                        + "// : Lift format\n"
+                        + "// : l :<name>:<1 rep max>\n");
+                
+                for (Lift liftData1 : liftData) {
+                    bw.write(liftData1.toString() + "\n");
+                }
+                
+                bw.write("// : WOD format\n"
+                        + "// : w :<name>:<hour>:<minute>:<second>\n"
+                        + "// :  name            hour  minute   second\n");
+                
+                for (WOD wodData1 : wodData) {
+                    bw.write(wodData1.toString() + "\n");
+                }
+                bw.write("// : Last Update was = " + reportDate);
             }
-
-            bw.write("// : WOD format\n"
-                    + "// : w :<name>:<hour>:<minute>:<second>\n"
-                    + "// :  name            hour  minute   second\n");
-
-            for (int k = 0; k < wodData.size(); k++) {
-                bw.write(wodData.get(k).toString() + "\n");
-            }
-            bw.write("// : Last Update was = " + reportDate);
-            bw.close();
             JOptionPane.showMessageDialog(null, "Updated");
         } catch (IOException e) {
-            e.printStackTrace();
         }
         return true;
     }
@@ -113,30 +110,28 @@ public boolean toBackupFile() {
         try {
             File file = new File("backup.txt");
             FileWriter fw = new FileWriter(file.getAbsoluteFile());
-            BufferedWriter bw = new BufferedWriter(fw);
-            bw.write("// : sample data file for PR2 software application\n"
-                    + "// : Luis Dall\n"
-                    + "// : November 5, 2014\n"
-                    + "// : Lift format\n"
-                    + "// : l :<name>:<1 rep max>\n"
-                    + "// :  name                 1 rep max)\n");
-
-            for (int j = 0; j < liftData.size(); j++) {
-                bw.write(liftData.get(j).toString() + "\n");
+            try (BufferedWriter bw = new BufferedWriter(fw)) {
+                bw.write("// : sample data file for PR2 software application\n"
+                        + "// : Stephen Blackburn\n"
+                        + "// : November 23, 2014\n"
+                        + "// : Lift format\n"
+                        + "// : l :<name>:<1 rep max>\n");
+                
+                for (Lift liftData1 : liftData) {
+                    bw.write(liftData1.toString() + "\n");
+                }
+                
+                bw.write("// : WOD format\n"
+                        + "// : w :<name>:<hour>:<minute>:<second>\n"
+                        + "// :  name            hour  minute   second\n");
+                
+                for (WOD wodData1 : wodData) {
+                    bw.write(wodData1.toString() + "\n");
+                }
+                bw.write("// : Last Update was = " + reportDate);
             }
-
-            bw.write("// : WOD format\n"
-                    + "// : w :<name>:<hour>:<minute>:<second>\n"
-                    + "// :  name            hour  minute   second\n");
-
-            for (int k = 0; k < wodData.size(); k++) {
-                bw.write(wodData.get(k).toString() + "\n");
-            }
-            bw.write("// : Last Update was = " + reportDate);
-            bw.close();
             JOptionPane.showMessageDialog(null, "Updated");
         } catch (IOException e) {
-            e.printStackTrace();
         }
         return true;
     }
