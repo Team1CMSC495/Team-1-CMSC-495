@@ -251,7 +251,7 @@ public class Lift extends javax.swing.JFrame implements Serializable {
     private void Change_BtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Change_BtnMouseClicked
         // add your code to change 1RM
         String changeOneRepMax = changeRM.getText();
-        int validate = validate1RM(changeOneRepMax);
+        float validate = validate1RM(changeOneRepMax);
         if (validate != 1) return;
        for (Lift liftData : ft.liftData) {
            if (liftData.getLiftName().compareTo(item) == 0) {
@@ -260,7 +260,7 @@ public class Lift extends javax.swing.JFrame implements Serializable {
            }
        }
         DecimalFormat df = new DecimalFormat( "#.##" );
-        int in = Integer.parseInt(changeOneRepMax);
+        float in = Float.parseFloat(changeOneRepMax);
         String increment = "95%  "+df.format(0.95*in)+"\t"+"70%  "+df.format(0.70*in)+"\n90%  "+df.format(0.90*in)+"\t"+"65%  "+df.format(0.65*in)+"\n85%  "+df.format(0.85*in)+"\t"+"60%  "+df.format(0.60*in)+"\n80%  "+df.format(0.80*in)+"\t"+"55%  "+df.format(0.55*in)+"\n75%  "+df.format(0.75*in)+"\t"+"50%  "+df.format(0.50*in);
         displayIncrements.setText(increment); //pass increment         
         displayOneRepMax.setText(ft.get1RM_FT(item)); //pass OneRepMax
@@ -269,10 +269,10 @@ public class Lift extends javax.swing.JFrame implements Serializable {
 
     //Checking to see if user input is within the predetermined ranges
     public static Integer validate1RM(String text1RM) {
-        String errorMessage = ("1RM must be a whole nummber between 30 and 3000.  Please Correct this entry and try again.");
-        int int1RM;
+        String errorMessage = ("1RM must be a number between 30 and 3000.  Please Correct this entry and try again.");
+        float int1RM;
         try {
-            int RM1 = Integer.parseInt(text1RM);
+            float RM1 = Float.parseFloat(text1RM);
             int1RM = RM1;
             } catch (NumberFormatException e) {
                 invalidInput(errorMessage);
