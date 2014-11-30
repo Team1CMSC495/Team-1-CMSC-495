@@ -1,19 +1,11 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 /**
- *
- * @author 
+ *Lift.java class creates a Lift object and a the lift GUI for the user interaction with the Lift object
+ * @Basic lift object created by Luis Dall, all GUI components and created by Tracy Devault, Error handling created by Stephen Blackburn
  */
 
-import java.util.*;
 import java.io.Serializable;
-import java.io.*;
-import java.util.StringTokenizer; 
-import java.io.Serializable;
-import java.io.*;
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
 
@@ -31,7 +23,9 @@ public class Lift extends javax.swing.JFrame implements Serializable {
    
        
    /**
-		The constructor sets the Lifts's name and 1RM
+	The constructor sets the Lifts's name and 1RM
+     * @param liftName
+     * @param oneRepMax
 	*/
 	
    public Lift(String liftName, String oneRepMax)
@@ -44,8 +38,11 @@ public class Lift extends javax.swing.JFrame implements Serializable {
       Accessors and Mutators
    */
 
-   
-   public void setLiftName(String newLiftName)
+    /**
+     * Accessors and Mutators
+     * @param newLiftName
+     */
+    public void setLiftName(String newLiftName)
    {
       liftName = newLiftName;
    }
@@ -71,6 +68,7 @@ public class Lift extends javax.swing.JFrame implements Serializable {
 		@return a refernce to the a string
 	*/
 	
+   @Override
    public String toString()
    {
       String str;
@@ -255,14 +253,12 @@ public class Lift extends javax.swing.JFrame implements Serializable {
         String changeOneRepMax = changeRM.getText();
         int validate = validate1RM(changeOneRepMax);
         if (validate != 1) return;
-        for(int i = 0; i < ft.liftData.size(); i++)
-        {
-            if(ft.liftData.get(i).getLiftName().compareTo(item) == 0)
-            {
-                ft.liftData.get(i).set1RM(changeOneRepMax);
-                break;
-            }
-        }
+       for (Lift liftData : ft.liftData) {
+           if (liftData.getLiftName().compareTo(item) == 0) {
+               liftData.set1RM(changeOneRepMax);
+               break;
+           }
+       }
         DecimalFormat df = new DecimalFormat( "#.##" );
         int in = Integer.parseInt(changeOneRepMax);
         String increment = "95%  "+df.format(0.95*in)+"\t"+"70%  "+df.format(0.70*in)+"\n90%  "+df.format(0.90*in)+"\t"+"65%  "+df.format(0.65*in)+"\n85%  "+df.format(0.85*in)+"\t"+"60%  "+df.format(0.60*in)+"\n80%  "+df.format(0.80*in)+"\t"+"55%  "+df.format(0.55*in)+"\n75%  "+df.format(0.75*in)+"\t"+"50%  "+df.format(0.50*in);
@@ -271,8 +267,9 @@ public class Lift extends javax.swing.JFrame implements Serializable {
         ft.toTextFile();
     }//GEN-LAST:event_Change_BtnMouseClicked
 
+    //Checking to see if user input is within the predetermined ranges
     public static Integer validate1RM(String text1RM) {
-        String errorMessage = "1RM must be a whole nummber between 0 and 3000.  Please Correct this entry and try again.";
+        String errorMessage = ("1RM must be a whole nummber between 30 and 3000.  Please Correct this entry and try again.");
         int int1RM;
         try {
             int RM1 = Integer.parseInt(text1RM);
@@ -281,12 +278,13 @@ public class Lift extends javax.swing.JFrame implements Serializable {
                 invalidInput(errorMessage);
                 return 0;
             }
-        if (int1RM < 0 || int1RM > 3000) {
+        if (int1RM < 30 || int1RM > 3000) {
             invalidInput(errorMessage); 
             return 0;
         } else return 1;
     }
-        
+    
+    //Error handling Message
     public static void invalidInput(String msg) {
         JOptionPane.showMessageDialog(null, msg, "Invalid Entry", JOptionPane.ERROR_MESSAGE);
     }
@@ -326,6 +324,7 @@ public class Lift extends javax.swing.JFrame implements Serializable {
          */
         java.awt.EventQueue.invokeLater(new Runnable() {
 
+            @Override
             public void run() {
                 new Lift().setVisible(true);
             }
