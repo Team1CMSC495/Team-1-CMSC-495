@@ -1,23 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
- * @author 
+ * WOD.java class creates a Lift object and a the lift GUI for the user interaction with the Lift object
+ * @Basic lift object created by Luis Dall, all GUI components and created by Tracy Devault, Error handling created by Stephen Blackburn
  */
 
-import java.util.*;
-import java.io.Serializable;
-import java.io.*;
-import java.util.StringTokenizer; 
-import java.io.Serializable;
-import java.io.*;
-import java.net.HttpURLConnection;
-import java.net.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 public class WOD extends javax.swing.JFrame {
@@ -37,7 +22,14 @@ public class WOD extends javax.swing.JFrame {
    private String url;                                  // Holds url value
        
    /**
-		The constructor sets the WOD;s name and hour, minute, second, content, notes, and URL datas
+		The constructor sets the WOD;s name and hour, minute, second, content, notes, and URL data
+     * @param wodName
+     * @param hour
+     * @param min
+     * @param sec
+     * @param con
+     * @param notes
+     * @param url
 	*/
 	
    public WOD(String wodName, String hour, String min, String sec, String con, String notes, String url)
@@ -55,8 +47,11 @@ public class WOD extends javax.swing.JFrame {
       Accessors and Mutators
    */
 
-   
-   public void setWodName(String newWodName)
+    /**
+     * Accessors and Mutators
+     * @param newWodName
+     */
+    public void setWodName(String newWodName)
    {
       wodName = newWodName;
    }
@@ -130,6 +125,7 @@ public class WOD extends javax.swing.JFrame {
 		@return a refernce to the a string
 	*/
 	
+   @Override
    public String toString()
    {
       String str;
@@ -439,17 +435,15 @@ public class WOD extends javax.swing.JFrame {
         String newsecond = updateSecond.getText();
         int validate = validateWOD(note, newhour, newminute, newsecond);
         if (validate != 1) return;
-        for(int i = 0; i < ft.wodData.size(); i++)
-        {
-            if(ft.wodData.get(i).getWodName().compareTo(item) == 0)
-            {
-                ft.wodData.get(i).setHour(newhour);
-                ft.wodData.get(i).setMin(newminute);
-                ft.wodData.get(i).setSec(newsecond);
-                ft.wodData.get(i).setNotes(note);
-                break;
-            }
-        }       
+       for (WOD wodData : ft.wodData) {
+           if (wodData.getWodName().compareTo(item) == 0) {
+               wodData.setHour(newhour);
+               wodData.setMin(newminute);
+               wodData.setSec(newsecond);
+               wodData.setNotes(note);
+               break;
+           }
+       }       
         wodHour.setText(newhour); //pass wod hour 
         wodMinute.setText(newminute); //pass wod minute
         wodSecond.setText(newsecond); //pass wod second
@@ -458,6 +452,7 @@ public class WOD extends javax.swing.JFrame {
         ft.toTextFile();
     }//GEN-LAST:event_updateNote_BtnMouseClicked
 
+    // Error handling for user input    
     public static Integer validateWOD(String note, String hour, String min, String sec) {
         String error1 = "Notes cannot contain the following reserved characters:  Colons (:), Quotation Marks (\").\n";
         String error2 = "Hours must be a whole number between 00-12.\n";
@@ -501,6 +496,7 @@ public class WOD extends javax.swing.JFrame {
         else return 1;
     }
     
+    //Error handling message
     public static void invalidInput(String msg) {
         JOptionPane.showMessageDialog(null, msg, "Invalid Entry", JOptionPane.ERROR_MESSAGE);
     }
@@ -519,6 +515,7 @@ public class WOD extends javax.swing.JFrame {
         wodParent.enable(true);
     }//GEN-LAST:event_jButton3MouseClicked
 
+    //providing internet access to url links
     private void wodURLMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_wodURLMouseClicked
         try {
          //Set your page url in this string. For eg, I m using URL for Google Search engine
@@ -570,6 +567,7 @@ public class WOD extends javax.swing.JFrame {
          */
         java.awt.EventQueue.invokeLater(new Runnable() {
 
+            @Override
             public void run() {
                 new WOD().setVisible(true);
             }
