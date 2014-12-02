@@ -15,6 +15,8 @@ public class PR2 extends javax.swing.JFrame {
         String thisLine;
         database.liftData.clear();
         database.wodData.clear();
+        lift.removeAllItems();
+        wod.removeAllItems();
             try {
                 BufferedReader bufIn = new BufferedReader(new FileReader("master.txt"));
 
