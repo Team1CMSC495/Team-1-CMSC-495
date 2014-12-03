@@ -28,6 +28,54 @@ l : Strict press : 46
 l : Sumo deadlift : 47
 l : Sumo deadlift high-pull : 48
 l : Thrusters : 49
+l : Bench press : 26
+l : Clean : 27
+l : Clean and jerk : 28
+l : Clean high pull : 29
+l : Deadlift : 30
+l : Front squat : 31
+l : Hang clean : 32
+l : Hang snatch : 33
+l : Hang squat clean : 34
+l : Hang Squat snatch : 35
+l : Power clean : 36
+l : Power clean and jerk : 37
+l : Power snatch : 38
+l : Push jerk : 39
+l : Push press : 40
+l : Shoulder press : 41
+l : Split jerk : 42
+l : Squat clean : 43
+l : Squat clean and jerk : 44
+l : Squat snatch : 45
+l : Strict press : 46
+l : Sumo deadlift : 47
+l : Sumo deadlift high-pull : 48
+l : Thrusters : 49
+l : Bench press : 26
+l : Clean : 27
+l : Clean and jerk : 28
+l : Clean high pull : 29
+l : Deadlift : 30
+l : Front squat : 31
+l : Hang clean : 32
+l : Hang snatch : 33
+l : Hang squat clean : 34
+l : Hang Squat snatch : 35
+l : Power clean : 36
+l : Power clean and jerk : 37
+l : Power snatch : 38
+l : Push jerk : 39
+l : Push press : 40
+l : Shoulder press : 41
+l : Split jerk : 42
+l : Squat clean : 43
+l : Squat clean and jerk : 44
+l : Squat snatch : 45
+l : Strict press : 46
+l : Sumo deadlift : 47
+l : Sumo deadlift high-pull : 48
+l : Thrusters : 49
 // : WOD format
 // : w :<name>:<hour>:<minute>:<second>
 // :  name            hour  minute   second
@@ -138,4 +186,218 @@ w : Whitten : 0 : 0 : 0 : Five rounds for time of-22 Kettlebell swings; 2 pood-2
 w : Wilmot : 0 : 0 : 0 : Six rounds for time of-50 Squats-25 Ring dips :  : www.crossfit.com/mt-archive2/007642.html
 w : Wittman : 0 : 0 : 0 : "Seven rounds for time of-1.5 pood Kettlebell swing; 15 reps-95 pound Power clean; 15 reps-15 Box jumps; 24"" box" :  : www.crossfit.com/mt-archive2/007434.html
 w : Wood : 0 : 0 : 0 : "5 Rounds for time of-Run 400 meters-10 Burpee box jumps; 24"" box-95 pound Sumo deadlift highpull; 10 reps-95 pound Thruster; 10 reps-Rest 1 minute" :  : www.crossfit.com/mt-archive2/008043.html
-// : Last Update was = 12/02/2014 20:20:46
+w : Abbate : 0 : 0 : 0 : Run 1 mile-155 pound Clean and jerk; 21 reps-Run 800 meters-155 pound Clean and jerk; 21 reps-Run 1 Mile :  : www.crossfit.com/mt-archive2/007523.html
+w : Adam Brown : 0 : 0 : 0 : Two rounds for time of-295 pound Deadlift; 24 reps-24 Box jumps; 24 inch box-24 Wallball shots; 20 pound ball-195 pound Bench press; 24 reps-24 Box jumps; 24 inch box-24 Wallball shots; 20 pound ball-145 pound Clean; 24 reps :  : www.crossfit.com/mt-archive2/007062.html
+w : Adrian : 0 : 0 : 0 : "Seven rounds for time of-3 Forward rolls-5 Wall climbs-7 Toes to bar-9 Box jumps; 30"" box" :  : www.crossfit.com/mt-archive2/008598.html
+w : Amanda : 0 : 0 : 0 : Three rounds; 9-7- and 5 reps; for time of-Muscle-up-135 pound Squat snatch :  : www.crossfit.com/mt-archive2/007012.html
+w : Annie : 0 : 0 : 0 : 50; 40; 30; 20 and 10 rep rounds of-Double unders-situps :  : www.crossfit.com/mt-archive2/007065.html
+w : Arnie : 0 : 0 : 0 : With a single 2 pood kettlebell-21 Turkish get-ups; Right arm-50 Swings-21 Overhead squats; Left arm-50 Swings-21 Overhead squats; Right arm-50 Swings-21 Turkish get-ups; Left arm :  : www.crossfit.com/mt-archive2/005449.html
+w : Badger : 0 : 0 : 0 : Complete three rounds for time of-95 pound Squat clean; 30 reps-30 Pullups-Run 800 meters :  : www.crossfit.com/mt-archive2/003226.html
+w : Barbara : 0 : 0 : 0 : 20 Pullups-30 Pushups-40 Situps-50 Squats-3 min rest between each of 5 rounds :  : www.crossfit.com/mt-archive2/003242.html
+w : Blake : 0 : 0 : 0 : Four rounds for time of-100 foot Walking lunge with 45lb plate held overhead-30 Box jump; 24 inch box-20 Wallball shots; 20 pound ball-10 Handstand pushups :  : www.crossfit.com/mt-archive2/007255.html
+w : Bradley : 0 : 0 : 0 : 10 rounds for time of-Sprint 100 meters-10 Pullups-Sprint 100 meters-10 Burpees-Rest 30 seconds :  : www.crossfit.com/mt-archive2/007821.html
+w : Bradshaw : 0 : 0 : 0 : 10 rounds for time of-3 Handstand pushups-225 pound Deadlift; 6 reps-12 Pullups-24 Double unders :  : www.crossfit.com/mt-archive2/007957.html
+w : Brenton : 0 : 0 : 0 : Five rounds for time of-Bear crawl 100 feet-Standing broad jump; 100 feet-Do three Burpees after every five broad jumps. -If you've got a twenty pound vest or body armor; wear it. :  : www.crossfit.com/mt-archive2/007209.html
+w : Brian : 0 : 0 : 0 : Three rounds for time of-15 foot Rope climb; 5 ascents-185 pound Back squat; 25 reps :  : www.crossfit.com/mt-archive2/008363.html
+w : Bulger : 0 : 0 : 0 : Ten rounds for time of-Run 150 meters-7 Chest to bar Pullups-135 pound Front squat; 7 reps-7 Handstand pushups :  : www.crossfit.com/mt-archive2/007207.html
+w : Bull : 0 : 0 : 0 : Two rounds for time of-200 Double unders-135 pound Overhead squat; 50 reps-50 Pullups-Run 1 mile :  : www.crossfit.com/mt-archive2/007339.html
+w : Carse : 0 : 0 : 0 : "21-18-15-12-9-6-3 reps for time of-95 pound Squat clean-Double-under-185 pound Deadlift-24"" Box jump-Begin each round with a 50 meter Bear crawl." :  : www.crossfit.com/mt-archive2/007918.html
+w : Chelsea : 0 : 0 : 0 : Set up before a clock and every minute on the minute perform -5 Pullups-10 pushups-15 squats. -Continue for thirty minutes. :  : www.crossfit.com/mt-archive2/000249.html
+w : Moore : 0 : 0 : 0 : Complete as many rounds in 20 minutes as you can of-15 ft Rope Climb; 1 ascent-Run 400 meters-Max rep Handstand push-up : 1 Round : www.crossfit.com/mt-archive2/007600.html
+w : Cindy : 0 : 0 : 0 : Complete as many rounds in 20 minutes as you can of-5 Pullups-10 pushups-15 Squats : 10 Rounds : www.crossfit.com/mt-archive2/008094.html
+w : Danny : 0 : 0 : 0 : Complete as many rounds in 20 minutes as you can of-24 inch Box Jump; 30 reps-115 pound Push Press; 20 reps-30 Pullups : 11 Rounds : www.crossfit.com/mt-archive2/004626.html
+w : Jack : 0 : 0 : 0 : Complete as many rounds as possible in 20 minutes of-115 pound Push press; 10 reps-10 KB Swings; 1.5 pood-10 Box jumps; 24 inch box : 12 Rounds : www.crossfit.com/mt-archive2/007130.html
+w : Johnson : 0 : 0 : 0 : Complete as many rounds in 20 minutes as you can of-245 pound Deadlift; 9 reps-8 Muscleups-155 pound Squat clean; 9 reps : 13 Rounds : www.crossfit.com/mt-archive2/007002.html
+w : Ledesma : 0 : 0 : 0 : Complete as many rounds as possible in 20 minutes of-5 Parallette handstand pushups-10 Toes through rings-20 pound Medicine ball cleans; 15 reps : 14 Rounds : www.crossfit.com/mt-archive2/007432.html
+w : Mary : 0 : 0 : 0 : Complete as many rounds in 20 minutes as you can of-5 Pullups-10 pushups-15 Squats : 15 Rounds : www.crossfit.com/mt-archive2/000974.html
+w : Mcghee : 0 : 0 : 0 : Complete as many rounds in 30 minutes as you can of-275 pound Deadlift; 5 reps-13 pushups-9 Box jumps; 24 inch box : 16 Rounds : www.crossfit.com/mt-archive2/005366.html
+w : Nate : 0 : 0 : 0 : Complete as many rounds in 20 minutes as you can of-2 Muscleups-4 Handstand pushups-8 2-Pood Kettlebell swings : 2 Rounds : www.crossfit.com/mt-archive2/003348.html
+w : Tom : 0 : 0 : 0 : Complete as many rounds in 25 minutes as you can of-7 Muscleups-155 pound Thruster; 11 reps-14 Toes-to-bar : 2 Rounds : www.crossfit.com/mt-archive2/008623.html
+w : Nicole : 0 : 0 : 0 : Complete as many rounds in 20 minutes as you can of-Run 400 meters-Max rep Pullups : 3 Rounds : www.crossfit.com/mt-archive2/004591.html
+w : Rankel : 0 : 0 : 0 : Complete as many rounds as possible in 20 minutes of-225 pound Deadlift; 6 reps-7 Burpee Pullups-10 Kettlebell swings; 2 pood-Run 200 meters : 3 Rounds : www.crossfit.com/mt-archive2/007362.html
+w : Rahol : 0 : 0 : 0 : Complete as many rounds as possible in -12 minutes of-12 Box Jump; 24/20 inch-6 Thruster; 95/65 lb-6 Bar-facing burpees : 4 Rounds : crossfitrifles.blogspot.com/2012/03/rahol.html
+w : Ricky : 0 : 0 : 0 : Complete as many rounds as possible in 20 minutes of-10 Pullups-75 pound dumbbell Deadlift; 5 reps-135 pound Push press; 8 reps : 5 Rounds : www.crossfit.com/mt-archive2/008089.html
+w : Coe : 0 : 0 : 0 : Ten rounds for time of-95 pound Thruster; 10 reps-10 Ring pushups :  : www.crossfit.com/mt-archive2/007064.html
+w : Collin : 0 : 0 : 0 : Six rounds for time of-Carry 50 pound sandbag 400 meters-115 pound Push press; 12 reps-12 Box jumps; 24 inch box-95 pound Sumo deadlift highpull; 12 reps :  : www.crossfit.com/mt-archive2/007263.html
+w : Dae Han : 0 : 0 : 0 : Three rounds for time of-Run 800 meters with a 45 pound barbell-15 foot Rope climb; 3 ascents-135 pound Thruster; 12 reps :  : www.crossfit.com/mt-archive2/008090.html
+w : Daniel : 0 : 0 : 0 : For time-50 Pullups-400 meter run-95 pound Thruster; 21 reps-800 meter run-95 pound Thruster; 21 reps-400 meter run-50 Pullups :  : www.crossfit.com/mt-archive2/001197.html
+w : Deforges : 0 : 0 : 0 : Five rounds for time of-225 pound Deadlift; 12 reps-20 Pullups-135 pound Clean and jerk; 12 reps-20 Knees to elbows :  : www.crossfit.com/mt-archive2/008147.html
+w : Del : 0 : 0 : 0 : For Time-25 Burpees-Run 400 meters with a 20 pound medicine ball-25 Weighted Pullups with a 20 pound dumbbell-Run 400 meters with a 20 pound medicine ball-25 Handstand pushups-Run 400 meters with a 20 pound medicine ball-25 Chest to bar Pullups-Run 400 meters with a 20 pound medicine ball-25 Burpees :  : www.crossfit.com/mt-archive2/008262.html
+w : Diane : 0 : 0 : 0 : 21/15/9 Rep Rounds For Time Of-Deadlift 225 lbs -Handstand pushups-3 rounds for time :  : www.crossfit.com/mt-archive2/008327.html
+w : DT : 0 : 0 : 0 : Five rounds for time of-155 pound Deadlift; 12 reps-155 pound Hang power clean; 9 reps-155 pound Push jerk; 6 reps :  : www.crossfit.com/mt-archive2/004622.html
+w : Elizabeth : 0 : 0 : 0 : 21/15/9 Rep Rounds For Time Of-Clean (135/95)-Ring Dips :  : www.crossfit.com/mt-archive2/008484.html
+w : Erin : 0 : 0 : 0 : Five rounds for time of-40 pound Dumbbells split clean; 15 reps-21 Pullups :  : www.crossfit.com/mt-archive2/004206.html
+w : Eva : 0 : 0 : 0 : Five rounds for time of-Run 800 meters-2 pood Kettlebell swing; 30 reps-30 Pullups :  : www.crossfit.com/mt-archive2/004780.html
+w : Forrest : 0 : 0 : 0 : Three rounds for time of-20 L Pullups-30 Toes to bar-40 Burpees-Run 800 meters :  : www.crossfit.com/mt-archive2/007195.html
+w : Fran : 0 : 0 : 0 : Three rounds; 21-15- and 9 reps; for time of-95-pound Thruster-Pullups :  : www.crossfit.com/mt-archive2/000611.html
+w : Garrett : 0 : 0 : 0 : Three rounds for time of-75 Squats-25 Ring handstand pushups-25 L Pullups :  : www.crossfit.com/mt-archive2/005262.html
+w : Gator : 0 : 0 : 0 : Eight rounds for time of-185 pound Front squat; 5 reps-26 Ring pushups :  : www.crossfit.com/mt-archive2/007816.html
+w : Glen : 0 : 0 : 0 : For time-135 pound Clean and jerk; 30 reps-Run 1 mile-15 foot Rope climb; 10 ascents-Run 1 mile-100 Burpees :  : www.crossfit.com/mt-archive2/008621.html
+w : Grace : 0 : 0 : 0 : For Time-30 Clean and Jerks (135/95) :  : www.crossfit.com/mt-archive2/007994.html
+w : Griff : 0 : 0 : 0 : For time-Run 800 meters-Run 400 meters backwards-Run 800 meters-Run 400 meters backwards :  : www.crossfit.com/mt-archive2/003719.html
+w : Hammer : 0 : 0 : 0 : Five rounds; each for time; of-135 pound Power clean; 5 reps-135 pound Front squat; 10 reps-135 pound Jerk; 5 reps-20 Pullups-Rest 90 seconds :  : www.crossfit.com/mt-archive2/007575.html
+w : Hansen : 0 : 0 : 0 : Five rounds for time of-2 pood Kettlebell swing; 30 reps-30 Burpees-30 Glute ham situps :  : www.crossfit.com/mt-archive2/004656.html
+w : Helen : 0 : 0 : 0 : Three rounds for time-Run 400 meters-1 1/2 pood Kettlebell X 21 swings (or 55 pound dumbbell swing)-12 Pullups :  : www.crossfit.com/mt-archive2/002374.html
+w : Hidalgo : 0 : 0 : 0 : "For time-Run 2 miles-Rest 2 minutes-135 pound Squat clean; 20 reps-20 Box jump; 24"" box-20 Walking lunge steps with 45lb plate held overhead-20 Box jump; 24"" box-135 pound Squat clean; 20 reps-Rest 2 minutes-Run 2 miles" :  : www.crossfit.com/mt-archive2/008088.html
+w : Holbrook : 0 : 0 : 0 : Ten rounds; each for time of-115 pound Thruster; 5 reps-10 Pullups-100 meter Sprint-Rest 1 minute :  : www.crossfit.com/mt-archive2/007405.html
+w : Holleyman : 0 : 0 : 0 : 30 rounds for time of-5 Wall ball shots; 20 pound ball-3 Handstand pushups-225 pound Power clean; 1 rep :  : www.crossfit.com/mt-archive2/008541.html
+w : Isabel : 0 : 0 : 0 : For time-Snatch 135 pounds; 30 reps-Use 95 pounds; 65 pounds or broomstick as needed. :  : www.crossfit.com/mt-archive2/007823.html
+w : Jackie : 0 : 0 : 0 : 1000 meter row-45 pound Thruster; 50 reps-30 Pullups :  : www.crossfit.com/mt-archive2/004540.html
+w : Jag 28 : 0 : 0 : 0 : For time-Run 800 meters-28 Kettlebell swings; 2 pood-28 Strict Pullups-28 Kettlebell clean and jerk; 2 pood each-28 Strict Pullups-Run 800 meters :  : www.crossfit.com/mt-archive2/008361.html
+w : Jared : 0 : 0 : 0 : 4 rounds for time of-Run 800 meters-40 Pullups-70 pushups :  : www.crossfit.com/mt-archive2/008537.html
+w : Jason : 0 : 0 : 0 : For time-100 Squats-5 Muscleups-75 Squats-10 Muscleups-50 Squats-15 Muscleups-25 Squats-20 Muscleups :  : www.crossfit.com/mt-archive2/002900.html
+w : Jerry : 0 : 0 : 0 : For time-Run 1 mile-Row 2K-Run 1 mile :  : www.crossfit.com/mt-archive2/005420.html
+w : Josh : 0 : 0 : 0 : For time-95 pound Overhead squat; 21 reps-42 Pullups-95 pound Overhead squat; 15 reps-30 Pullups-95 pound Overhead squat; 9 reps-18 Pullups :  : www.crossfit.com/mt-archive2/001748.html
+w : Joshie : 0 : 0 : 0 : Complete three rounds for time of-40 pound Dumbbell snatch; 21 reps; right arm-21 L Pullups-40 pound Dumbbell snatch; 21 reps; left arm-21 L Pullups :  : www.crossfit.com/mt-archive2/003232.html
+w : Jt : 0 : 0 : 0 : 21/15/9 reps of-Handstand pushups-Ring dips-pushups :  : www.crossfit.com/mt-archive2/000838.html
+w : Karen : 0 : 0 : 0 : For time-150 Wallball shots; 20 pound ball :  : www.crossfit.com/mt-archive2/004884.html
+w : Kelly : 0 : 0 : 0 : Five rounds for time of-Run 400 meters-30 Box jump; 24 inch box-30 Wall ball shots; 20 pound ball :  : www.crossfit.com/mt-archive2/008103.html
+w : Linda : 0 : 0 : 0 : 10/9/8/7/6/5/4/3/2/1 reps of the triplet-Deadlift 1 1/2 body weight-Bench press body weight-Clean 3/4 body weight :  : www.crossfit.com/mt-archive2/008961.html
+w : Luce : 0 : 0 : 0 : Wearing a 20 pound vest; three rounds for time of-1K Run-10 Muscleups-100 Squats :  : www.crossfit.com/mt-archive2/006992.html
+w : Lumberjack 20 : 0 : 0 : 0 : "20 Deadlifts (275lbs)-Run 400m-20 KB swings (2pood)-Run 400m-20 Overhead Squats (115lbs)-Run 400m-20 Burpees-Run 400m-20 Pullups (Chest to Bar)-Run 400m-20 Box jumps (24"")-Run 400m-20 DB Squat Cleans (45lbs each)-Run 400m" :  : www.crossfit.com/mt-archive2/005100.html
+w : Lynne : 0 : 0 : 0 : Five rounds for max reps of-Body weight bench press-Pullups :  : www.crossfit.com/mt-archive2/003788.html
+w : Mccluskey : 0 : 0 : 0 : Three rounds of-9 Muscleups-15 Burpee Pullups-21 Pullups-Run 800 meters :  : www.crossfit.com/mt-archive2/007470.html
+w : Meadows : 0 : 0 : 0 : For time-20 Muscleups-25 Lowers from an inverted hang on the rings; slowly; with straight body and arms-30 Ring handstand pushups-35 Ring rows-40 Ring pushups :  : www.crossfit.com/mt-archive2/007858.html
+w : Michael : 0 : 0 : 0 : Three rounds for time of-Run 800 meters-50 Back Extensions-50 situps :  : www.crossfit.com/mt-archive2/000847.html
+w : Moon : 0 : 0 : 0 : Seven rounds for time of-40 pound dumbbell Hang split snatch; 10 reps Right arm-15 ft Rope Climb; 1 ascent-40 pound dumbbell Hang split snatch; 10 reps Left arm-15 ft Rope Climb; 1 ascent :  : www.crossfit.com/mt-archive2/007662.html
+w : Moose : 0 : 0 : 0 : For Time -1000 Meter Row-10 rounds of-7 Bar Facing Burpee’s; 3 Thrusters (95#/65#)-1200 Meter Run :  : readysetbeast.com/2013/03/27/wod-15-moose/
+w : Morrison : 0 : 0 : 0 : 50; 40; 30; 20 and 10 rep rounds of-Wall ball shots; 20 pound ball-Box jump; 24 inch box-Kettlebell swings; 1.5 pood :  : www.crossfit.com/mt-archive2/007741.html
+w : Mr. Joshua : 0 : 0 : 0 : Five rounds for time of-Run 400 meters-30 Glute ham situps-250 pound Deadlift; 15 reps :  : www.crossfit.com/mt-archive2/004207.html
+w : Murph : 0 : 0 : 0 : For time-1 mile Run-100 Pullups-200 pushups-300 Squats-1 mile Run :  : www.crossfit.com/mt-archive2/000881.html
+w : Nancy : 0 : 0 : 0 : Five rounds for time of-400 meter run-95 pound Overhead squat; 15 reps :  : www.crossfit.com/mt-archive2/004598.html
+w : Nick : 0 : 0 : 0 : 12 rounds for time of-45 pound Dumbbell hang squat clean; 10 reps-6 Handstand pushups on dumbbells :  : www.crossfit.com/mt-archive2/008440.html
+w : Nutts : 0 : 0 : 0 : For time-10 Handstand pushups-250 pound Deadlift; 15 reps-25 Box jumps; 30 inch box-50 Pullups-100 Wallball shots; 20 pounds; 10'-200 Double unders-Run 400 meters with a 45lb plate :  : www.crossfit.com/mt-archive2/005448.html
+w : Paul : 0 : 0 : 0 : Five rounds for time of-50 Double unders-35 Knees to elbows-185 pound Overhead walk; 20 yards :  : www.crossfit.com/mt-archive2/005389.html
+w : Pheezy : 0 : 0 : 0 : Three rounds for time of-165 pound Front squat; 5 reps-18 Pullups-225 pound Deadlift; 5 reps-18 Toes-to-bar-165 pound Push jerk; 5 reps-18 Hand release pushups :  : www.crossfit.com/mt-archive2/008285.html
+w : Randy : 0 : 0 : 0 : 75 pound Power snatch; 75 reps for time. :  : www.crossfit.com/mt-archive2/003349.html
+w : Rj : 0 : 0 : 0 : Five rounds for time of-Run 800 meters-15 ft Rope Climb; 5 ascents-50 pushups :  : www.crossfit.com/mt-archive2/006959.html
+w : Roy : 0 : 0 : 0 : Five rounds for time of-225 pound Deadlift; 15 reps-20 Box jumps; 24 inch box-25 Pullups :  : www.crossfit.com/mt-archive2/007038.html
+w : Ryan : 0 : 0 : 0 : Five rounds for time of-7 Muscleups-21 Burpees :  : www.crossfit.com/mt-archive2/004205.html
+w : Santiago : 0 : 0 : 0 : Seven rounds for time of-35 pound Dumbbell hang squat clean; 18 reps-18 Pullups-135 pound Power clean; 10 reps-10 Handstand pushups :  : www.crossfit.com/mt-archive2/007896.html
+w : Santora : 0 : 0 : 0 : Three rounds for reps of-155 pound Squat cleans; 1 minute 20' Shuttle sprints (20' forward + 20' backwards = 1 rep); 1 minute 245 pound Deadlifts; 1 minute Burpees; 1 minute 155 pound Jerks; 1 minute Rest 1 minute :  : www.crossfit.com/mt-archive2/008017.html
+w : Severin : 0 : 0 : 0 : 50 Strict Pullups-100 pushups; release hands from floor at the bottom-Run 5K :  : www.crossfit.com/mt-archive2/007117.html
+w : Ship : 0 : 0 : 0 : "Nine rounds for time of-185 pound Squat clean; 7 reps-8 Burpee box jumps; 36"" box" :  : www.crossfit.com/mt-archive2/008500.html
+w : Small : 0 : 0 : 0 : "Three rounds for time of-Row 1000 meters-50 Burpees-50 Box jumps; 24"" box-Run 800 meters" :  : www.crossfit.com/mt-archive2/007687.html
+w : Stephen : 0 : 0 : 0 : 30/25/20/15/10/5 rep rounds of-GHD sit-up-Back extension-Knees to elbow-95 pound Stiff legged deadlift :  : www.crossfit.com/mt-archive2/005238.html
+w : Strange : 0 : 0 : 0 : Eight rounds for time of-600 meter Run-1.5 pood Weighted pullup; 11 reps-11 Walking lunge steps; carrying 1.5 pood kettlebells-1.5 pood Kettlebell thruster; 11 reps :  : www.crossfit.com/mt-archive2/008445.html
+w : The Seven : 0 : 0 : 0 : Seven rounds for time of-7 Handstand pushups-135 pound Thruster; 7 reps-7 Knees to elbows-245 pound Deadlift; 7 reps-7 Burpees-7 Kettlebell swings; 2 pood-7 Pullups :  : www.crossfit.com/mt-archive2/005450.html
+w : Thompson : 0 : 0 : 0 : 10 rounds for time of-15 ft Rope Climb; 1 ascent-95 pound Back squat; 29 reps-135 pound barbells Farmer carry; 10 meters-Begin the rope climbs seated on the floor. :  : www.crossfit.com/mt-archive2/007278.html
+w : Tommy V : 0 : 0 : 0 : For time-115 pound Thruster; 21 reps-15 ft Rope Climb; 12 ascents-115 pound Thruster; 15 reps-15 ft Rope Climb; 9 ascents-115 pound Thruster; 9 reps-15 ft Rope Climb; 6 ascents :  : www.crossfit.com/mt-archive2/003408.html
+w : Tully : 0 : 0 : 0 : Four rounds for time of-Swim 200 meters-40 pound Dumbbell squat cleans; 23 reps :  : www.crossfit.com/mt-archive2/008566.html
+w : Tumilson : 0 : 0 : 0 : 8 rounds for time of-Run 200 meters-11 Dumbbell burpee deadlifts; 60 pound dumbbells :  : www.crossfit.com/mt-archive2/008466.html
+w : Tyler : 0 : 0 : 0 : Five rounds for time of-7 Muscleups-95 pound Sumo deadlift highpull; 21 reps :  : www.crossfit.com/mt-archive2/005001.html
+w : War Frank : 0 : 0 : 0 : Three rounds for time of-25 Muscleups-100 Squats-35 GHD situps :  : www.crossfit.com/mt-archive2/005286.html
+w : Weaver : 0 : 0 : 0 : Four rounds for time of-10 L Pullups-15 pushups-15 Chest to bar Pullups-15 pushups-20 Pullups-15 pushups :  : www.crossfit.com/mt-archive2/007509.html
+w : White : 0 : 0 : 0 : Five rounds for time of-15' Rope climb; 3 ascents-10 Toes to bar-21 Walking lunge steps with 45lb plate held overhead-Run 400 meters :  : www.crossfit.com/mt-archive2/007993.html
+w : Whitten : 0 : 0 : 0 : Five rounds for time of-22 Kettlebell swings; 2 pood-22 Box jump; 24 inch box-Run 400 meters-22 Burpees-22 Wall ball shots; 20 pound ball :  : www.crossfit.com/mt-archive2/007310.html
+w : Wilmot : 0 : 0 : 0 : Six rounds for time of-50 Squats-25 Ring dips :  : www.crossfit.com/mt-archive2/007642.html
+w : Wittman : 0 : 0 : 0 : "Seven rounds for time of-1.5 pood Kettlebell swing; 15 reps-95 pound Power clean; 15 reps-15 Box jumps; 24"" box" :  : www.crossfit.com/mt-archive2/007434.html
+w : Wood : 0 : 0 : 0 : "5 Rounds for time of-Run 400 meters-10 Burpee box jumps; 24"" box-95 pound Sumo deadlift highpull; 10 reps-95 pound Thruster; 10 reps-Rest 1 minute" :  : www.crossfit.com/mt-archive2/008043.html
+w : Abbate : 0 : 0 : 0 : Run 1 mile-155 pound Clean and jerk; 21 reps-Run 800 meters-155 pound Clean and jerk; 21 reps-Run 1 Mile :  : www.crossfit.com/mt-archive2/007523.html
+w : Adam Brown : 0 : 0 : 0 : Two rounds for time of-295 pound Deadlift; 24 reps-24 Box jumps; 24 inch box-24 Wallball shots; 20 pound ball-195 pound Bench press; 24 reps-24 Box jumps; 24 inch box-24 Wallball shots; 20 pound ball-145 pound Clean; 24 reps :  : www.crossfit.com/mt-archive2/007062.html
+w : Adrian : 0 : 0 : 0 : "Seven rounds for time of-3 Forward rolls-5 Wall climbs-7 Toes to bar-9 Box jumps; 30"" box" :  : www.crossfit.com/mt-archive2/008598.html
+w : Amanda : 0 : 0 : 0 : Three rounds; 9-7- and 5 reps; for time of-Muscle-up-135 pound Squat snatch :  : www.crossfit.com/mt-archive2/007012.html
+w : Annie : 0 : 0 : 0 : 50; 40; 30; 20 and 10 rep rounds of-Double unders-situps :  : www.crossfit.com/mt-archive2/007065.html
+w : Arnie : 0 : 0 : 0 : With a single 2 pood kettlebell-21 Turkish get-ups; Right arm-50 Swings-21 Overhead squats; Left arm-50 Swings-21 Overhead squats; Right arm-50 Swings-21 Turkish get-ups; Left arm :  : www.crossfit.com/mt-archive2/005449.html
+w : Badger : 0 : 0 : 0 : Complete three rounds for time of-95 pound Squat clean; 30 reps-30 Pullups-Run 800 meters :  : www.crossfit.com/mt-archive2/003226.html
+w : Barbara : 0 : 0 : 0 : 20 Pullups-30 Pushups-40 Situps-50 Squats-3 min rest between each of 5 rounds :  : www.crossfit.com/mt-archive2/003242.html
+w : Blake : 0 : 0 : 0 : Four rounds for time of-100 foot Walking lunge with 45lb plate held overhead-30 Box jump; 24 inch box-20 Wallball shots; 20 pound ball-10 Handstand pushups :  : www.crossfit.com/mt-archive2/007255.html
+w : Bradley : 0 : 0 : 0 : 10 rounds for time of-Sprint 100 meters-10 Pullups-Sprint 100 meters-10 Burpees-Rest 30 seconds :  : www.crossfit.com/mt-archive2/007821.html
+w : Bradshaw : 0 : 0 : 0 : 10 rounds for time of-3 Handstand pushups-225 pound Deadlift; 6 reps-12 Pullups-24 Double unders :  : www.crossfit.com/mt-archive2/007957.html
+w : Brenton : 0 : 0 : 0 : Five rounds for time of-Bear crawl 100 feet-Standing broad jump; 100 feet-Do three Burpees after every five broad jumps. -If you've got a twenty pound vest or body armor; wear it. :  : www.crossfit.com/mt-archive2/007209.html
+w : Brian : 0 : 0 : 0 : Three rounds for time of-15 foot Rope climb; 5 ascents-185 pound Back squat; 25 reps :  : www.crossfit.com/mt-archive2/008363.html
+w : Bulger : 0 : 0 : 0 : Ten rounds for time of-Run 150 meters-7 Chest to bar Pullups-135 pound Front squat; 7 reps-7 Handstand pushups :  : www.crossfit.com/mt-archive2/007207.html
+w : Bull : 0 : 0 : 0 : Two rounds for time of-200 Double unders-135 pound Overhead squat; 50 reps-50 Pullups-Run 1 mile :  : www.crossfit.com/mt-archive2/007339.html
+w : Carse : 0 : 0 : 0 : "21-18-15-12-9-6-3 reps for time of-95 pound Squat clean-Double-under-185 pound Deadlift-24"" Box jump-Begin each round with a 50 meter Bear crawl." :  : www.crossfit.com/mt-archive2/007918.html
+w : Chelsea : 0 : 0 : 0 : Set up before a clock and every minute on the minute perform -5 Pullups-10 pushups-15 squats. -Continue for thirty minutes. :  : www.crossfit.com/mt-archive2/000249.html
+w : Moore : 0 : 0 : 0 : Complete as many rounds in 20 minutes as you can of-15 ft Rope Climb; 1 ascent-Run 400 meters-Max rep Handstand push-up : 1 Round : www.crossfit.com/mt-archive2/007600.html
+w : Cindy : 0 : 0 : 0 : Complete as many rounds in 20 minutes as you can of-5 Pullups-10 pushups-15 Squats : 10 Rounds : www.crossfit.com/mt-archive2/008094.html
+w : Danny : 0 : 0 : 0 : Complete as many rounds in 20 minutes as you can of-24 inch Box Jump; 30 reps-115 pound Push Press; 20 reps-30 Pullups : 11 Rounds : www.crossfit.com/mt-archive2/004626.html
+w : Jack : 0 : 0 : 0 : Complete as many rounds as possible in 20 minutes of-115 pound Push press; 10 reps-10 KB Swings; 1.5 pood-10 Box jumps; 24 inch box : 12 Rounds : www.crossfit.com/mt-archive2/007130.html
+w : Johnson : 0 : 0 : 0 : Complete as many rounds in 20 minutes as you can of-245 pound Deadlift; 9 reps-8 Muscleups-155 pound Squat clean; 9 reps : 13 Rounds : www.crossfit.com/mt-archive2/007002.html
+w : Ledesma : 0 : 0 : 0 : Complete as many rounds as possible in 20 minutes of-5 Parallette handstand pushups-10 Toes through rings-20 pound Medicine ball cleans; 15 reps : 14 Rounds : www.crossfit.com/mt-archive2/007432.html
+w : Mary : 0 : 0 : 0 : Complete as many rounds in 20 minutes as you can of-5 Pullups-10 pushups-15 Squats : 15 Rounds : www.crossfit.com/mt-archive2/000974.html
+w : Mcghee : 0 : 0 : 0 : Complete as many rounds in 30 minutes as you can of-275 pound Deadlift; 5 reps-13 pushups-9 Box jumps; 24 inch box : 16 Rounds : www.crossfit.com/mt-archive2/005366.html
+w : Nate : 0 : 0 : 0 : Complete as many rounds in 20 minutes as you can of-2 Muscleups-4 Handstand pushups-8 2-Pood Kettlebell swings : 2 Rounds : www.crossfit.com/mt-archive2/003348.html
+w : Tom : 0 : 0 : 0 : Complete as many rounds in 25 minutes as you can of-7 Muscleups-155 pound Thruster; 11 reps-14 Toes-to-bar : 2 Rounds : www.crossfit.com/mt-archive2/008623.html
+w : Nicole : 0 : 0 : 0 : Complete as many rounds in 20 minutes as you can of-Run 400 meters-Max rep Pullups : 3 Rounds : www.crossfit.com/mt-archive2/004591.html
+w : Rankel : 0 : 0 : 0 : Complete as many rounds as possible in 20 minutes of-225 pound Deadlift; 6 reps-7 Burpee Pullups-10 Kettlebell swings; 2 pood-Run 200 meters : 3 Rounds : www.crossfit.com/mt-archive2/007362.html
+w : Rahol : 0 : 0 : 0 : Complete as many rounds as possible in -12 minutes of-12 Box Jump; 24/20 inch-6 Thruster; 95/65 lb-6 Bar-facing burpees : 4 Rounds : crossfitrifles.blogspot.com/2012/03/rahol.html
+w : Ricky : 0 : 0 : 0 : Complete as many rounds as possible in 20 minutes of-10 Pullups-75 pound dumbbell Deadlift; 5 reps-135 pound Push press; 8 reps : 5 Rounds : www.crossfit.com/mt-archive2/008089.html
+w : Coe : 0 : 0 : 0 : Ten rounds for time of-95 pound Thruster; 10 reps-10 Ring pushups :  : www.crossfit.com/mt-archive2/007064.html
+w : Collin : 0 : 0 : 0 : Six rounds for time of-Carry 50 pound sandbag 400 meters-115 pound Push press; 12 reps-12 Box jumps; 24 inch box-95 pound Sumo deadlift highpull; 12 reps :  : www.crossfit.com/mt-archive2/007263.html
+w : Dae Han : 0 : 0 : 0 : Three rounds for time of-Run 800 meters with a 45 pound barbell-15 foot Rope climb; 3 ascents-135 pound Thruster; 12 reps :  : www.crossfit.com/mt-archive2/008090.html
+w : Daniel : 0 : 0 : 0 : For time-50 Pullups-400 meter run-95 pound Thruster; 21 reps-800 meter run-95 pound Thruster; 21 reps-400 meter run-50 Pullups :  : www.crossfit.com/mt-archive2/001197.html
+w : Deforges : 0 : 0 : 0 : Five rounds for time of-225 pound Deadlift; 12 reps-20 Pullups-135 pound Clean and jerk; 12 reps-20 Knees to elbows :  : www.crossfit.com/mt-archive2/008147.html
+w : Del : 0 : 0 : 0 : For Time-25 Burpees-Run 400 meters with a 20 pound medicine ball-25 Weighted Pullups with a 20 pound dumbbell-Run 400 meters with a 20 pound medicine ball-25 Handstand pushups-Run 400 meters with a 20 pound medicine ball-25 Chest to bar Pullups-Run 400 meters with a 20 pound medicine ball-25 Burpees :  : www.crossfit.com/mt-archive2/008262.html
+w : Diane : 0 : 0 : 0 : 21/15/9 Rep Rounds For Time Of-Deadlift 225 lbs -Handstand pushups-3 rounds for time :  : www.crossfit.com/mt-archive2/008327.html
+w : DT : 0 : 0 : 0 : Five rounds for time of-155 pound Deadlift; 12 reps-155 pound Hang power clean; 9 reps-155 pound Push jerk; 6 reps :  : www.crossfit.com/mt-archive2/004622.html
+w : Elizabeth : 0 : 0 : 0 : 21/15/9 Rep Rounds For Time Of-Clean (135/95)-Ring Dips :  : www.crossfit.com/mt-archive2/008484.html
+w : Erin : 0 : 0 : 0 : Five rounds for time of-40 pound Dumbbells split clean; 15 reps-21 Pullups :  : www.crossfit.com/mt-archive2/004206.html
+w : Eva : 0 : 0 : 0 : Five rounds for time of-Run 800 meters-2 pood Kettlebell swing; 30 reps-30 Pullups :  : www.crossfit.com/mt-archive2/004780.html
+w : Forrest : 0 : 0 : 0 : Three rounds for time of-20 L Pullups-30 Toes to bar-40 Burpees-Run 800 meters :  : www.crossfit.com/mt-archive2/007195.html
+w : Fran : 0 : 0 : 0 : Three rounds; 21-15- and 9 reps; for time of-95-pound Thruster-Pullups :  : www.crossfit.com/mt-archive2/000611.html
+w : Garrett : 0 : 0 : 0 : Three rounds for time of-75 Squats-25 Ring handstand pushups-25 L Pullups :  : www.crossfit.com/mt-archive2/005262.html
+w : Gator : 0 : 0 : 0 : Eight rounds for time of-185 pound Front squat; 5 reps-26 Ring pushups :  : www.crossfit.com/mt-archive2/007816.html
+w : Glen : 0 : 0 : 0 : For time-135 pound Clean and jerk; 30 reps-Run 1 mile-15 foot Rope climb; 10 ascents-Run 1 mile-100 Burpees :  : www.crossfit.com/mt-archive2/008621.html
+w : Grace : 0 : 0 : 0 : For Time-30 Clean and Jerks (135/95) :  : www.crossfit.com/mt-archive2/007994.html
+w : Griff : 0 : 0 : 0 : For time-Run 800 meters-Run 400 meters backwards-Run 800 meters-Run 400 meters backwards :  : www.crossfit.com/mt-archive2/003719.html
+w : Hammer : 0 : 0 : 0 : Five rounds; each for time; of-135 pound Power clean; 5 reps-135 pound Front squat; 10 reps-135 pound Jerk; 5 reps-20 Pullups-Rest 90 seconds :  : www.crossfit.com/mt-archive2/007575.html
+w : Hansen : 0 : 0 : 0 : Five rounds for time of-2 pood Kettlebell swing; 30 reps-30 Burpees-30 Glute ham situps :  : www.crossfit.com/mt-archive2/004656.html
+w : Helen : 0 : 0 : 0 : Three rounds for time-Run 400 meters-1 1/2 pood Kettlebell X 21 swings (or 55 pound dumbbell swing)-12 Pullups :  : www.crossfit.com/mt-archive2/002374.html
+w : Hidalgo : 0 : 0 : 0 : "For time-Run 2 miles-Rest 2 minutes-135 pound Squat clean; 20 reps-20 Box jump; 24"" box-20 Walking lunge steps with 45lb plate held overhead-20 Box jump; 24"" box-135 pound Squat clean; 20 reps-Rest 2 minutes-Run 2 miles" :  : www.crossfit.com/mt-archive2/008088.html
+w : Holbrook : 0 : 0 : 0 : Ten rounds; each for time of-115 pound Thruster; 5 reps-10 Pullups-100 meter Sprint-Rest 1 minute :  : www.crossfit.com/mt-archive2/007405.html
+w : Holleyman : 0 : 0 : 0 : 30 rounds for time of-5 Wall ball shots; 20 pound ball-3 Handstand pushups-225 pound Power clean; 1 rep :  : www.crossfit.com/mt-archive2/008541.html
+w : Isabel : 0 : 0 : 0 : For time-Snatch 135 pounds; 30 reps-Use 95 pounds; 65 pounds or broomstick as needed. :  : www.crossfit.com/mt-archive2/007823.html
+w : Jackie : 0 : 0 : 0 : 1000 meter row-45 pound Thruster; 50 reps-30 Pullups :  : www.crossfit.com/mt-archive2/004540.html
+w : Jag 28 : 0 : 0 : 0 : For time-Run 800 meters-28 Kettlebell swings; 2 pood-28 Strict Pullups-28 Kettlebell clean and jerk; 2 pood each-28 Strict Pullups-Run 800 meters :  : www.crossfit.com/mt-archive2/008361.html
+w : Jared : 0 : 0 : 0 : 4 rounds for time of-Run 800 meters-40 Pullups-70 pushups :  : www.crossfit.com/mt-archive2/008537.html
+w : Jason : 0 : 0 : 0 : For time-100 Squats-5 Muscleups-75 Squats-10 Muscleups-50 Squats-15 Muscleups-25 Squats-20 Muscleups :  : www.crossfit.com/mt-archive2/002900.html
+w : Jerry : 0 : 0 : 0 : For time-Run 1 mile-Row 2K-Run 1 mile :  : www.crossfit.com/mt-archive2/005420.html
+w : Josh : 0 : 0 : 0 : For time-95 pound Overhead squat; 21 reps-42 Pullups-95 pound Overhead squat; 15 reps-30 Pullups-95 pound Overhead squat; 9 reps-18 Pullups :  : www.crossfit.com/mt-archive2/001748.html
+w : Joshie : 0 : 0 : 0 : Complete three rounds for time of-40 pound Dumbbell snatch; 21 reps; right arm-21 L Pullups-40 pound Dumbbell snatch; 21 reps; left arm-21 L Pullups :  : www.crossfit.com/mt-archive2/003232.html
+w : Jt : 0 : 0 : 0 : 21/15/9 reps of-Handstand pushups-Ring dips-pushups :  : www.crossfit.com/mt-archive2/000838.html
+w : Karen : 0 : 0 : 0 : For time-150 Wallball shots; 20 pound ball :  : www.crossfit.com/mt-archive2/004884.html
+w : Kelly : 0 : 0 : 0 : Five rounds for time of-Run 400 meters-30 Box jump; 24 inch box-30 Wall ball shots; 20 pound ball :  : www.crossfit.com/mt-archive2/008103.html
+w : Linda : 0 : 0 : 0 : 10/9/8/7/6/5/4/3/2/1 reps of the triplet-Deadlift 1 1/2 body weight-Bench press body weight-Clean 3/4 body weight :  : www.crossfit.com/mt-archive2/008961.html
+w : Luce : 0 : 0 : 0 : Wearing a 20 pound vest; three rounds for time of-1K Run-10 Muscleups-100 Squats :  : www.crossfit.com/mt-archive2/006992.html
+w : Lumberjack 20 : 0 : 0 : 0 : "20 Deadlifts (275lbs)-Run 400m-20 KB swings (2pood)-Run 400m-20 Overhead Squats (115lbs)-Run 400m-20 Burpees-Run 400m-20 Pullups (Chest to Bar)-Run 400m-20 Box jumps (24"")-Run 400m-20 DB Squat Cleans (45lbs each)-Run 400m" :  : www.crossfit.com/mt-archive2/005100.html
+w : Lynne : 0 : 0 : 0 : Five rounds for max reps of-Body weight bench press-Pullups :  : www.crossfit.com/mt-archive2/003788.html
+w : Mccluskey : 0 : 0 : 0 : Three rounds of-9 Muscleups-15 Burpee Pullups-21 Pullups-Run 800 meters :  : www.crossfit.com/mt-archive2/007470.html
+w : Meadows : 0 : 0 : 0 : For time-20 Muscleups-25 Lowers from an inverted hang on the rings; slowly; with straight body and arms-30 Ring handstand pushups-35 Ring rows-40 Ring pushups :  : www.crossfit.com/mt-archive2/007858.html
+w : Michael : 0 : 0 : 0 : Three rounds for time of-Run 800 meters-50 Back Extensions-50 situps :  : www.crossfit.com/mt-archive2/000847.html
+w : Moon : 0 : 0 : 0 : Seven rounds for time of-40 pound dumbbell Hang split snatch; 10 reps Right arm-15 ft Rope Climb; 1 ascent-40 pound dumbbell Hang split snatch; 10 reps Left arm-15 ft Rope Climb; 1 ascent :  : www.crossfit.com/mt-archive2/007662.html
+w : Moose : 0 : 0 : 0 : For Time -1000 Meter Row-10 rounds of-7 Bar Facing Burpee’s; 3 Thrusters (95#/65#)-1200 Meter Run :  : readysetbeast.com/2013/03/27/wod-15-moose/
+w : Morrison : 0 : 0 : 0 : 50; 40; 30; 20 and 10 rep rounds of-Wall ball shots; 20 pound ball-Box jump; 24 inch box-Kettlebell swings; 1.5 pood :  : www.crossfit.com/mt-archive2/007741.html
+w : Mr. Joshua : 0 : 0 : 0 : Five rounds for time of-Run 400 meters-30 Glute ham situps-250 pound Deadlift; 15 reps :  : www.crossfit.com/mt-archive2/004207.html
+w : Murph : 0 : 0 : 0 : For time-1 mile Run-100 Pullups-200 pushups-300 Squats-1 mile Run :  : www.crossfit.com/mt-archive2/000881.html
+w : Nancy : 0 : 0 : 0 : Five rounds for time of-400 meter run-95 pound Overhead squat; 15 reps :  : www.crossfit.com/mt-archive2/004598.html
+w : Nick : 0 : 0 : 0 : 12 rounds for time of-45 pound Dumbbell hang squat clean; 10 reps-6 Handstand pushups on dumbbells :  : www.crossfit.com/mt-archive2/008440.html
+w : Nutts : 0 : 0 : 0 : For time-10 Handstand pushups-250 pound Deadlift; 15 reps-25 Box jumps; 30 inch box-50 Pullups-100 Wallball shots; 20 pounds; 10'-200 Double unders-Run 400 meters with a 45lb plate :  : www.crossfit.com/mt-archive2/005448.html
+w : Paul : 0 : 0 : 0 : Five rounds for time of-50 Double unders-35 Knees to elbows-185 pound Overhead walk; 20 yards :  : www.crossfit.com/mt-archive2/005389.html
+w : Pheezy : 0 : 0 : 0 : Three rounds for time of-165 pound Front squat; 5 reps-18 Pullups-225 pound Deadlift; 5 reps-18 Toes-to-bar-165 pound Push jerk; 5 reps-18 Hand release pushups :  : www.crossfit.com/mt-archive2/008285.html
+w : Randy : 0 : 0 : 0 : 75 pound Power snatch; 75 reps for time. :  : www.crossfit.com/mt-archive2/003349.html
+w : Rj : 0 : 0 : 0 : Five rounds for time of-Run 800 meters-15 ft Rope Climb; 5 ascents-50 pushups :  : www.crossfit.com/mt-archive2/006959.html
+w : Roy : 0 : 0 : 0 : Five rounds for time of-225 pound Deadlift; 15 reps-20 Box jumps; 24 inch box-25 Pullups :  : www.crossfit.com/mt-archive2/007038.html
+w : Ryan : 0 : 0 : 0 : Five rounds for time of-7 Muscleups-21 Burpees :  : www.crossfit.com/mt-archive2/004205.html
+w : Santiago : 0 : 0 : 0 : Seven rounds for time of-35 pound Dumbbell hang squat clean; 18 reps-18 Pullups-135 pound Power clean; 10 reps-10 Handstand pushups :  : www.crossfit.com/mt-archive2/007896.html
+w : Santora : 0 : 0 : 0 : Three rounds for reps of-155 pound Squat cleans; 1 minute 20' Shuttle sprints (20' forward + 20' backwards = 1 rep); 1 minute 245 pound Deadlifts; 1 minute Burpees; 1 minute 155 pound Jerks; 1 minute Rest 1 minute :  : www.crossfit.com/mt-archive2/008017.html
+w : Severin : 0 : 0 : 0 : 50 Strict Pullups-100 pushups; release hands from floor at the bottom-Run 5K :  : www.crossfit.com/mt-archive2/007117.html
+w : Ship : 0 : 0 : 0 : "Nine rounds for time of-185 pound Squat clean; 7 reps-8 Burpee box jumps; 36"" box" :  : www.crossfit.com/mt-archive2/008500.html
+w : Small : 0 : 0 : 0 : "Three rounds for time of-Row 1000 meters-50 Burpees-50 Box jumps; 24"" box-Run 800 meters" :  : www.crossfit.com/mt-archive2/007687.html
+w : Stephen : 0 : 0 : 0 : 30/25/20/15/10/5 rep rounds of-GHD sit-up-Back extension-Knees to elbow-95 pound Stiff legged deadlift :  : www.crossfit.com/mt-archive2/005238.html
+w : Strange : 0 : 0 : 0 : Eight rounds for time of-600 meter Run-1.5 pood Weighted pullup; 11 reps-11 Walking lunge steps; carrying 1.5 pood kettlebells-1.5 pood Kettlebell thruster; 11 reps :  : www.crossfit.com/mt-archive2/008445.html
+w : The Seven : 0 : 0 : 0 : Seven rounds for time of-7 Handstand pushups-135 pound Thruster; 7 reps-7 Knees to elbows-245 pound Deadlift; 7 reps-7 Burpees-7 Kettlebell swings; 2 pood-7 Pullups :  : www.crossfit.com/mt-archive2/005450.html
+w : Thompson : 0 : 0 : 0 : 10 rounds for time of-15 ft Rope Climb; 1 ascent-95 pound Back squat; 29 reps-135 pound barbells Farmer carry; 10 meters-Begin the rope climbs seated on the floor. :  : www.crossfit.com/mt-archive2/007278.html
+w : Tommy V : 0 : 0 : 0 : For time-115 pound Thruster; 21 reps-15 ft Rope Climb; 12 ascents-115 pound Thruster; 15 reps-15 ft Rope Climb; 9 ascents-115 pound Thruster; 9 reps-15 ft Rope Climb; 6 ascents :  : www.crossfit.com/mt-archive2/003408.html
+w : Tully : 0 : 0 : 0 : Four rounds for time of-Swim 200 meters-40 pound Dumbbell squat cleans; 23 reps :  : www.crossfit.com/mt-archive2/008566.html
+w : Tumilson : 0 : 0 : 0 : 8 rounds for time of-Run 200 meters-11 Dumbbell burpee deadlifts; 60 pound dumbbells :  : www.crossfit.com/mt-archive2/008466.html
+w : Tyler : 0 : 0 : 0 : Five rounds for time of-7 Muscleups-95 pound Sumo deadlift highpull; 21 reps :  : www.crossfit.com/mt-archive2/005001.html
+w : War Frank : 0 : 0 : 0 : Three rounds for time of-25 Muscleups-100 Squats-35 GHD situps :  : www.crossfit.com/mt-archive2/005286.html
+w : Weaver : 0 : 0 : 0 : Four rounds for time of-10 L Pullups-15 pushups-15 Chest to bar Pullups-15 pushups-20 Pullups-15 pushups :  : www.crossfit.com/mt-archive2/007509.html
+w : White : 0 : 0 : 0 : Five rounds for time of-15' Rope climb; 3 ascents-10 Toes to bar-21 Walking lunge steps with 45lb plate held overhead-Run 400 meters :  : www.crossfit.com/mt-archive2/007993.html
+w : Whitten : 0 : 0 : 0 : Five rounds for time of-22 Kettlebell swings; 2 pood-22 Box jump; 24 inch box-Run 400 meters-22 Burpees-22 Wall ball shots; 20 pound ball :  : www.crossfit.com/mt-archive2/007310.html
+w : Wilmot : 0 : 0 : 0 : Six rounds for time of-50 Squats-25 Ring dips :  : www.crossfit.com/mt-archive2/007642.html
+w : Wittman : 0 : 0 : 0 : "Seven rounds for time of-1.5 pood Kettlebell swing; 15 reps-95 pound Power clean; 15 reps-15 Box jumps; 24"" box" :  : www.crossfit.com/mt-archive2/007434.html
+w : Wood : 0 : 0 : 0 : "5 Rounds for time of-Run 400 meters-10 Burpee box jumps; 24"" box-95 pound Sumo deadlift highpull; 10 reps-95 pound Thruster; 10 reps-Rest 1 minute" :  : www.crossfit.com/mt-archive2/008043.html
+// : Last Update was = 12/02/2014 20:29:39
