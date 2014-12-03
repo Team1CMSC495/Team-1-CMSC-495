@@ -1,10 +1,11 @@
 
-
 /**
- *Lift.java class creates a Lift object and a the lift GUI for the user interaction with the Lift object
- * @Basic lift object created by Luis Dall, all GUI components and created by Tracy Devault, Error handling created by Stephen Blackburn
+ * Lift.java class creates a Lift object and a the lift GUI for the user
+ * interaction with the Lift object
+ *
+ * @Basic lift object created by Luis Dall, all GUI components and created by
+ * Tracy Devault, Error handling created by Stephen Blackburn
  */
-
 import java.io.Serializable;
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
@@ -14,77 +15,69 @@ public class Lift extends javax.swing.JFrame implements Serializable {
     /**
      * Creates new form Lift
      */
-    
-     //Fields
-   private String originalData = "Lift name : 1RM";	// hold string read from txt file
-   private int tokenCount;			// hold number of tokens
-   private String liftName;                           //Holds Lifts name
-   private String oneRepMax;                          //Holds 1RM
-   
-       
-   /**
-	The constructor sets the Lifts's name and 1RM
+    //Fields
+    private String originalData = "Lift name : 1RM";	// hold string read from txt file
+    private int tokenCount;			// hold number of tokens
+    private String liftName;                           //Holds Lifts name
+    private String oneRepMax;                          //Holds 1RM
+
+    /**
+     * The constructor sets the Lifts's name and 1RM
+     *
      * @param liftName
      * @param oneRepMax
-	*/
-	
-   public Lift(String liftName, String oneRepMax)
-   {
-      this.liftName = liftName;
-      this.oneRepMax = oneRepMax;
-   } 
-   
-    /**
-      Accessors and Mutators
-   */
+     */
+    public Lift(String liftName, String oneRepMax) {
+        this.liftName = liftName;
+        this.oneRepMax = oneRepMax;
+    }
 
     /**
      * Accessors and Mutators
+     */
+    /**
+     * Accessors and Mutators
+     *
      * @param newLiftName
      */
-    public void setLiftName(String newLiftName)
-   {
-      liftName = newLiftName;
-   }
-	
-   public String getLiftName()
-   {
-      return liftName;
-   }
+    public void setLiftName(String newLiftName) {
+        liftName = newLiftName;
+    }
 
-   public void set1RM(String new1RM)
-   {
-      oneRepMax = new1RM;
-   }
-	
-   public String get1RM()
-   {
-      return oneRepMax;
-   }
-   
-    
-      /**
-		The toString method returns a string containing the Lift's data.
-		@return a refernce to the a string
-	*/
-	
-   @Override
-   public String toString()
-   {
-      String str;
-   	
-      str = "l : " + liftName + " : " + oneRepMax;   				
-      return str;
-   }
-   
+    public String getLiftName() {
+        return liftName;
+    }
+
+    public void set1RM(String new1RM) {
+        oneRepMax = new1RM;
+    }
+
+    public String get1RM() {
+        return oneRepMax;
+    }
+
+    /**
+     * The toString method returns a string containing the Lift's data.
+     *
+     * @return a refernce to the a string
+     */
+    @Override
+    public String toString() {
+        String str;
+
+        str = "l : " + liftName + " : " + oneRepMax;
+        return str;
+    }
+
    ////////////////////////////////////////////////////////
-   
     String item = "";
     PR2 liftParent;
     FromText ft;
+
     public Lift() {
-        initComponents();       
+        initComponents();
     }
+
     public Lift(String item) {
         initComponents();
         this.item = item;
@@ -160,6 +153,7 @@ public class Lift extends javax.swing.JFrame implements Serializable {
 
         changeRM.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
 
+        displayIncrements.setEditable(false);
         displayIncrements.setColumns(20);
         displayIncrements.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         displayIncrements.setForeground(new java.awt.Color(0, 153, 102));
@@ -229,21 +223,21 @@ public class Lift extends javax.swing.JFrame implements Serializable {
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:        
-       
+
         displayName.setText(item); //pass item name
         //populate your data and put them here
-        DecimalFormat df = new DecimalFormat( "#.##" );
+        DecimalFormat df = new DecimalFormat("#.##");
         int in = Integer.parseInt(ft.get1RM_FT(item));
-        String increment = "95%  "+df.format(0.95*in)+"\t"+"70%  "+df.format(0.70*in)+"\n90%  "+df.format(0.90*in)+"\t"+"65%  "+df.format(0.65*in)+"\n85%  "+df.format(0.85*in)+"\t"+"60%  "+df.format(0.60*in)+"\n80%  "+df.format(0.80*in)+"\t"+"55%  "+df.format(0.55*in)+"\n75%  "+df.format(0.75*in)+"\t"+"50%  "+df.format(0.50*in);
-       
-        displayIncrements.setText(increment); //pass increment         
+        String increment = "95%  " + df.format(0.95 * in) + "\t" + "70%  " + df.format(0.70 * in) + "\n90%  " + df.format(0.90 * in) + "\t" + "65%  " + df.format(0.65 * in) + "\n85%  " + df.format(0.85 * in) + "\t" + "60%  " + df.format(0.60 * in) + "\n80%  " + df.format(0.80 * in) + "\t" + "55%  " + df.format(0.55 * in) + "\n75%  " + df.format(0.75 * in) + "\t" + "50%  " + df.format(0.50 * in);
+
+        displayIncrements.setText(increment); //pass increment  
         displayOneRepMax.setText(ft.get1RM_FT(item)); //pass OneRepMax
-        
+
     }//GEN-LAST:event_formWindowOpened
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
         // TODO add your handling code here:
-        this.dispose();        
+        this.dispose();
         liftParent.show();
         liftParent.enable(true);
     }//GEN-LAST:event_jButton3MouseClicked
@@ -252,16 +246,18 @@ public class Lift extends javax.swing.JFrame implements Serializable {
         // add your code to change 1RM
         String changeOneRepMax = changeRM.getText();
         float validate = validate1RM(changeOneRepMax);
-        if (validate != 1) return;
-       for (Lift liftData : ft.liftData) {
-           if (liftData.getLiftName().compareTo(item) == 0) {
-               liftData.set1RM(changeOneRepMax);
-               break;
-           }
-       }
-        DecimalFormat df = new DecimalFormat( "#.##" );
+        if (validate != 1) {
+            return;
+        }
+        for (Lift liftData : ft.liftData) {
+            if (liftData.getLiftName().compareTo(item) == 0) {
+                liftData.set1RM(changeOneRepMax);
+                break;
+            }
+        }
+        DecimalFormat df = new DecimalFormat("#.##");
         float in = Float.parseFloat(changeOneRepMax);
-        String increment = "95%  "+df.format(0.95*in)+"\t"+"70%  "+df.format(0.70*in)+"\n90%  "+df.format(0.90*in)+"\t"+"65%  "+df.format(0.65*in)+"\n85%  "+df.format(0.85*in)+"\t"+"60%  "+df.format(0.60*in)+"\n80%  "+df.format(0.80*in)+"\t"+"55%  "+df.format(0.55*in)+"\n75%  "+df.format(0.75*in)+"\t"+"50%  "+df.format(0.50*in);
+        String increment = "95%  " + df.format(0.95 * in) + "\t" + "70%  " + df.format(0.70 * in) + "\n90%  " + df.format(0.90 * in) + "\t" + "65%  " + df.format(0.65 * in) + "\n85%  " + df.format(0.85 * in) + "\t" + "60%  " + df.format(0.60 * in) + "\n80%  " + df.format(0.80 * in) + "\t" + "55%  " + df.format(0.55 * in) + "\n75%  " + df.format(0.75 * in) + "\t" + "50%  " + df.format(0.50 * in);
         displayIncrements.setText(increment); //pass increment         
         displayOneRepMax.setText(ft.get1RM_FT(item)); //pass OneRepMax
         ft.toTextFile();
@@ -274,20 +270,23 @@ public class Lift extends javax.swing.JFrame implements Serializable {
         try {
             float RM1 = Float.parseFloat(text1RM);
             int1RM = RM1;
-            } catch (NumberFormatException e) {
-                invalidInput(errorMessage);
-                return 0;
-            }
-        if (int1RM < 30 || int1RM > 3000) {
-            invalidInput(errorMessage); 
+        } catch (NumberFormatException e) {
+            invalidInput(errorMessage);
             return 0;
-        } else return 1;
+        }
+        if (int1RM < 30 || int1RM > 3000) {
+            invalidInput(errorMessage);
+            return 0;
+        } else {
+            return 1;
+        }
     }
-    
+
     //Error handling Message
     public static void invalidInput(String msg) {
         JOptionPane.showMessageDialog(null, msg, "Invalid Entry", JOptionPane.ERROR_MESSAGE);
     }
+
     /**
      * @param args the command line arguments
      */
