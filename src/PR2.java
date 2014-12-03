@@ -44,7 +44,8 @@ public class PR2 extends javax.swing.JFrame {
 
         for (WOD wodData : database.wodData) {
             wod.addItem(wodData.getWodName());
-        } 
+        }
+       
     }
     
     // reads data fom backup.txt file for error handling
@@ -68,7 +69,9 @@ public class PR2 extends javax.swing.JFrame {
             } catch (IOException ioe) {
             }
 
-           
+           lift.addItem("Lifts");
+            wod.addItem("WODs");
+            
         for (Lift liftData : database.liftData) {
             String liftCopy = liftData.getLiftName();
             lift.addItem(liftCopy);
@@ -182,7 +185,7 @@ public class PR2 extends javax.swing.JFrame {
 
     private void closeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeActionPerformed
         database.toTextFile();
-     
+        database.toBackupFile();
         this.dispose();       
     }//GEN-LAST:event_closeActionPerformed
 
