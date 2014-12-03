@@ -1,11 +1,10 @@
 // : sample data file for PR2 software application
-// : Luis Dall
-// : November 5, 2014
+// : Stephen Blackburn
+// : November 23, 2014
 // : Lift format
 // : l :<name>:<1 rep max>
-// :  name                 1 rep max)
 l : Back squat : 25
-l : Bench press : 26
+l : Bench press : 55
 l : Clean : 27
 l : Clean and jerk : 28
 l : Clean high pull : 29
@@ -32,7 +31,7 @@ l : Thrusters : 49
 // : WOD format
 // : w :<name>:<hour>:<minute>:<second>
 // :  name            hour  minute   second
-w : Abbate : 0 : 0 : 0 : Run 1 mile-155 pound Clean and jerk; 21 reps-Run 800 meters-155 pound Clean and jerk; 21 reps-Run 1 Mile :  : www.crossfit.com/mt-archive2/007523.html
+w : Abbate : 9 : 9 : 9 : Run 1 mile-155 pound Clean and jerk; 21 reps-Run 800 meters-155 pound Clean and jerk; 21 reps-Run 1 Mile : sfbgqibgvkdbvpivkjrghbkadjbvipuadvhaipqernqiuehgqejgrbvui[qgvakbvkerqjrgfiuqebrgbnguiqerghviuavnqerkjgbqe : www.crossfit.com/mt-archive2/007523.html
 w : Adam Brown : 0 : 0 : 0 : Two rounds for time of-295 pound Deadlift; 24 reps-24 Box jumps; 24 inch box-24 Wallball shots; 20 pound ball-195 pound Bench press; 24 reps-24 Box jumps; 24 inch box-24 Wallball shots; 20 pound ball-145 pound Clean; 24 reps :  : www.crossfit.com/mt-archive2/007062.html
 w : Adrian : 0 : 0 : 0 : "Seven rounds for time of-3 Forward rolls-5 Wall climbs-7 Toes to bar-9 Box jumps; 30"" box" :  : www.crossfit.com/mt-archive2/008598.html
 w : Amanda : 0 : 0 : 0 : Three rounds; 9-7- and 5 reps; for time of-Muscle-up-135 pound Squat snatch :  : www.crossfit.com/mt-archive2/007012.html
@@ -139,4 +138,4 @@ w : Whitten : 0 : 0 : 0 : Five rounds for time of-22 Kettlebell swings; 2 pood-2
 w : Wilmot : 0 : 0 : 0 : Six rounds for time of-50 Squats-25 Ring dips :  : www.crossfit.com/mt-archive2/007642.html
 w : Wittman : 0 : 0 : 0 : "Seven rounds for time of-1.5 pood Kettlebell swing; 15 reps-95 pound Power clean; 15 reps-15 Box jumps; 24"" box" :  : www.crossfit.com/mt-archive2/007434.html
 w : Wood : 0 : 0 : 0 : "5 Rounds for time of-Run 400 meters-10 Burpee box jumps; 24"" box-95 pound Sumo deadlift highpull; 10 reps-95 pound Thruster; 10 reps-Rest 1 minute" :  : www.crossfit.com/mt-archive2/008043.html
-// : Last Update was = 11/28/2014 10:43:14
+// : Last Update was = 12/02/2014 21:07:08
