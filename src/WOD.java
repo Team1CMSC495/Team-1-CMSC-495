@@ -208,7 +208,7 @@ public class WOD extends javax.swing.JFrame {
         jLabel7.setText("URL:");
 
         updateNote_Btn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        updateNote_Btn.setText("Update note");
+        updateNote_Btn.setText("Update Note");
         updateNote_Btn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 updateNote_BtnMouseClicked(evt);
@@ -573,8 +573,8 @@ public class WOD extends javax.swing.JFrame {
                 break;
             }
         }
-        wodMinute.setText(newhour); //pass wod hour 
-        wodHour.setText(newminute); //pass wod minute
+        wodMinute.setText(newminute); //pass wod hour 
+        wodHour.setText(newhour); //pass wod minute
         wodSecond.setText(newsecond); //pass wod second
 
         ft.toTextFile();

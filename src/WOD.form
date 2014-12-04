@@ -199,7 +199,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="12" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Update note"/>
+        <Property name="text" type="java.lang.String" value="Update Note"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="updateNote_BtnMouseClicked"/>
