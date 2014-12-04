@@ -146,7 +146,6 @@ public class WOD extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        wodNameTitle = new javax.swing.JLabel();
         hourDisplayLabel = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -156,15 +155,11 @@ public class WOD extends javax.swing.JFrame {
         updateNote_Btn = new javax.swing.JButton();
         returnToMain_WOD = new javax.swing.JButton();
         wodShowName = new javax.swing.JLabel();
-        wodHour = new javax.swing.JLabel();
-        wodMinute = new javax.swing.JLabel();
-        wodSecond = new javax.swing.JLabel();
         wodURL = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         wodContent = new javax.swing.JTextArea();
         jScrollPane3 = new javax.swing.JScrollPane();
         updateNote = new javax.swing.JTextArea();
-        jLabel12 = new javax.swing.JLabel();
         newHour = new javax.swing.JLabel();
         updateHour = new javax.swing.JTextField();
         newMinute = new javax.swing.JLabel();
@@ -176,32 +171,38 @@ public class WOD extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         wodNote = new javax.swing.JTextArea();
+        wodMinute = new javax.swing.JTextField();
+        wodHour = new javax.swing.JTextField();
+        wodSecond = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("WOD Window");
+        setPreferredSize(new java.awt.Dimension(600, 600));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
             }
         });
 
-        wodNameTitle.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        wodNameTitle.setText("WOD Name:");
-
         hourDisplayLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        hourDisplayLabel.setText("Hour:");
+        hourDisplayLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        hourDisplayLabel.setText("Hours");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel3.setText("Minute:");
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Minutes");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel4.setText("Second:");
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Seconds");
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Content:");
+        jLabel5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel6.setText("Note:");
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel6.setText("<- Notes ->");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel7.setText("URL:");
@@ -228,24 +229,12 @@ public class WOD extends javax.swing.JFrame {
             }
         });
 
-        wodShowName.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        wodShowName.setForeground(new java.awt.Color(0, 204, 102));
+        wodShowName.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        wodShowName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         wodShowName.setText("jLabel8");
 
-        wodHour.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        wodHour.setForeground(new java.awt.Color(0, 204, 102));
-        wodHour.setText("jLabel9");
-
-        wodMinute.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        wodMinute.setForeground(new java.awt.Color(0, 204, 102));
-        wodMinute.setText("jLabel10");
-
-        wodSecond.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        wodSecond.setForeground(new java.awt.Color(0, 204, 102));
-        wodSecond.setText("jLabel11");
-
         wodURL.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        wodURL.setForeground(new java.awt.Color(0, 204, 102));
+        wodURL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         wodURL.setText("jLabel14");
         wodURL.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -256,7 +245,6 @@ public class WOD extends javax.swing.JFrame {
         wodContent.setEditable(false);
         wodContent.setColumns(20);
         wodContent.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        wodContent.setForeground(new java.awt.Color(0, 204, 102));
         wodContent.setLineWrap(true);
         wodContent.setRows(3);
         jScrollPane1.setViewportView(wodContent);
@@ -268,23 +256,26 @@ public class WOD extends javax.swing.JFrame {
         updateNote.setRows(5);
         jScrollPane3.setViewportView(updateNote);
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel12.setText("Note:");
-
         newHour.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        newHour.setText("New Hour");
+        newHour.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        newHour.setText("Hours");
 
         updateHour.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        updateHour.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         newMinute.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        newMinute.setText("New Minute");
+        newMinute.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        newMinute.setText("Minutes");
 
         updateMinute.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        updateMinute.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         newSecond.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        newSecond.setText("New Second");
+        newSecond.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        newSecond.setText("Seconds");
 
         updateSecond.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        updateSecond.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         updateTime_Btn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         updateTime_Btn.setText("Update Time");
@@ -294,168 +285,155 @@ public class WOD extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Past Preformance");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Current Preformance");
 
         wodNote.setEditable(false);
         wodNote.setColumns(20);
+        wodNote.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         wodNote.setLineWrap(true);
         wodNote.setRows(5);
         jScrollPane2.setViewportView(wodNote);
+
+        wodMinute.setEditable(false);
+        wodMinute.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        wodMinute.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        wodMinute.setLocation(new java.awt.Point(0, 0));
+
+        wodHour.setEditable(false);
+        wodHour.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        wodHour.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        wodHour.setLocation(new java.awt.Point(0, 0));
+
+        wodSecond.setEditable(false);
+        wodSecond.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        wodSecond.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        wodSecond.setLocation(new java.awt.Point(0, 0));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane1)
-                        .addGap(23, 23, 23))
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(wodShowName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel7)
+                    .addComponent(wodURL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(hourDisplayLabel)
-                                    .addComponent(jLabel3))
-                                .addGap(25, 25, 25)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(wodMinute, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(wodHour, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(wodNameTitle)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel4)
-                                    .addGap(24, 24, 24)
-                                    .addComponent(wodSecond, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addComponent(jLabel6)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(107, 107, 107)
-                                    .addComponent(jLabel1))
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(updateNote_Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(117, 117, 117))
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(wodShowName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel7)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(wodURL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addContainerGap())
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addGap(0, 128, Short.MAX_VALUE)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(newSecond)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(updateSecond, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(newMinute)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(updateMinute, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jLabel2)
-                                                .addGroup(layout.createSequentialGroup()
-                                                    .addComponent(newHour)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(updateHour, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jLabel12)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(updateTime_Btn))))
-                                        .addGap(113, 113, 113))))))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(262, 262, 262)
-                .addComponent(returnToMain_WOD)
-                .addGap(0, 0, Short.MAX_VALUE))
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(252, 252, 252)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(hourDisplayLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel4)
+                        .addGap(382, 382, 382)
+                        .addComponent(newHour)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(newMinute)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(newSecond))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(wodHour, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(wodMinute, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(wodSecond, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(382, 382, 382)
+                        .addComponent(updateHour, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(updateMinute, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(updateSecond, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(returnToMain_WOD, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(88, 88, 88)
+                        .addComponent(jLabel6)
+                        .addGap(92, 92, 92)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(updateTime_Btn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 297, Short.MAX_VALUE)))
+                    .addComponent(updateNote_Btn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {updateHour, updateMinute, updateSecond});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jScrollPane2, jScrollPane3});
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {hourDisplayLabel, jLabel3, jLabel4, newHour, newMinute, newSecond, updateHour, updateMinute, updateSecond, wodHour, wodMinute, wodSecond});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
+                .addComponent(wodShowName, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(wodURL, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 27, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(wodNameTitle)
-                    .addComponent(wodShowName)
-                    .addComponent(jLabel7)
-                    .addComponent(wodURL))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(jLabel5))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(newSecond)
+                    .addComponent(newMinute)
+                    .addComponent(newHour)
+                    .addComponent(jLabel4)
+                    .addComponent(hourDisplayLabel)
+                    .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hourDisplayLabel)
-                    .addComponent(wodHour)
-                    .addComponent(newHour)
-                    .addComponent(updateHour, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(wodMinute)
-                    .addComponent(newMinute)
-                    .addComponent(updateMinute, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(wodSecond)
-                    .addComponent(newSecond)
-                    .addComponent(updateSecond, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(updateSecond, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(updateMinute, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(updateHour, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(wodSecond, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(wodMinute, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(wodHour, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(updateTime_Btn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel6))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(updateNote_Btn)
-                .addGap(36, 36, 36)
-                .addComponent(returnToMain_WOD, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(34, 34, 34)
+                .addComponent(returnToMain_WOD)
+                .addGap(32, 32, 32))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {hourDisplayLabel, jLabel3, jLabel4, jLabel5, jLabel6, jLabel7, wodNameTitle});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {hourDisplayLabel, jLabel3, jLabel4, jLabel6, newHour, newMinute, newSecond, updateHour, updateMinute, updateSecond, wodHour, wodMinute, wodSecond});
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {wodHour, wodMinute, wodSecond, wodShowName, wodURL});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jScrollPane2, jScrollPane3});
 
-        pack();
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jLabel1, jLabel2});
+
+        setSize(new java.awt.Dimension(942, 761));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
 
         wodShowName.setText(item); // pass wod name
-        wodHour.setText(ft.getHourFT(item)); //pass wod hour 
-        wodMinute.setText(ft.getMinFT(item)); //pass wod minute
+        wodMinute.setText(ft.getHourFT(item)); //pass wod hour 
+        wodHour.setText(ft.getMinFT(item)); //pass wod minute
         wodSecond.setText(ft.getSecFT(item)); //pass wod second
         wodContent.setText(ft.getDescription(item)); //pass wod content
         wodNote.setText(ft.getNotesFT(item)); //pass wod note
@@ -595,8 +573,8 @@ public class WOD extends javax.swing.JFrame {
                 break;
             }
         }
-        wodHour.setText(newhour); //pass wod hour 
-        wodMinute.setText(newminute); //pass wod minute
+        wodMinute.setText(newhour); //pass wod hour 
+        wodHour.setText(newminute); //pass wod minute
         wodSecond.setText(newsecond); //pass wod second
 
         ft.toTextFile();
@@ -647,7 +625,6 @@ public class WOD extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel hourDisplayLabel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -668,11 +645,10 @@ public class WOD extends javax.swing.JFrame {
     private javax.swing.JTextField updateSecond;
     private javax.swing.JButton updateTime_Btn;
     private javax.swing.JTextArea wodContent;
-    private javax.swing.JLabel wodHour;
-    private javax.swing.JLabel wodMinute;
-    private javax.swing.JLabel wodNameTitle;
+    private javax.swing.JTextField wodHour;
+    private javax.swing.JTextField wodMinute;
     private javax.swing.JTextArea wodNote;
-    private javax.swing.JLabel wodSecond;
+    private javax.swing.JTextField wodSecond;
     private javax.swing.JLabel wodShowName;
     private javax.swing.JLabel wodURL;
     // End of variables declaration//GEN-END:variables
