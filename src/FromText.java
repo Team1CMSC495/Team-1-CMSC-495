@@ -129,8 +129,7 @@ public boolean toBackupFile() {
                     bw.write(wodData1.toString() + "\n");
                 }
                 bw.write("// : Last Update was = " + reportDate);
-            }
-            JOptionPane.showMessageDialog(null, "Back up file has been Updated");
+            }            
         } catch (IOException e) {
         }
         return true;
