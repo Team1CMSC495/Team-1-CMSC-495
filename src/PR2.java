@@ -185,7 +185,7 @@ public class PR2 extends javax.swing.JFrame {
 
     private void closeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeActionPerformed
         database.toTextFile();
-        database.toBackupFile();
+        
         this.dispose();       
     }//GEN-LAST:event_closeActionPerformed
 
@@ -198,6 +198,7 @@ public class PR2 extends javax.swing.JFrame {
             Lift liftf = new Lift(selectedItem.toString()); 
             liftf.liftParent = this;
             liftf.ft = database;
+            database.toBackupFile();
             this.setEnabled(false);
             liftf.setVisible(true);
         } 
@@ -211,6 +212,7 @@ public class PR2 extends javax.swing.JFrame {
             WOD wodf = new WOD(selectedItem.toString()); 
             wodf.wodParent = this;
             wodf.ft = database;
+            database.toBackupFile();
             this.setEnabled(false);
             wodf.setVisible(true);
         }
