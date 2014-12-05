@@ -95,7 +95,7 @@ public class FromText
                 }
                 bw.write("// : Last Update was = " + reportDate);
             }
-            JOptionPane.showMessageDialog(null, "Updated");
+            
         } catch (IOException e) {
         }
         return true;
