@@ -432,8 +432,8 @@ public class WOD extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         wodShowName.setText(item); // pass wod name
-        wodMinute.setText(ft.getHourFT(item)); //pass wod hour 
-        wodHour.setText(ft.getMinFT(item)); //pass wod minute
+        wodMinute.setText(ft.getMinFT(item)); //pass wod hour 
+        wodHour.setText(ft.getHourFT(item)); //pass wod minute
         wodSecond.setText(ft.getSecFT(item)); //pass wod second
         wodContent.setText(ft.getDescription(item)); //pass wod content
         wodNote.setText(ft.getNotesFT(item)); //pass wod note
