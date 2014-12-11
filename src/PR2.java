@@ -1,4 +1,10 @@
-/**
+/** 
+ * PR2 (Personal Record Recorder) An application created to record personal
+ * records of CrossFit athletes Created by Luis Dall, Tracy Devault and Stephen
+ * Blackburn Group 1: CMSC 495 7981 Current Trends and Projects in Computer
+ * Science (2148) 
+ * Instructor: Dr. Hung Dao
+ * 
  * PR2.java class creates a Lift object and a the lift GUI for the user interaction with the Lift object
  * @Basic lift object created by Luis Dall, all GUI components and created by Tracy Devault, Error handling created by Stephen Blackburn
  */
@@ -103,9 +109,9 @@ public class PR2 extends javax.swing.JFrame {
         lift = new javax.swing.JComboBox();
         wod = new javax.swing.JComboBox();
         close = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        subtitle = new javax.swing.JLabel();
+        directions_2 = new javax.swing.JLabel();
+        directions_1 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -151,15 +157,15 @@ public class PR2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Your Personal Record Recorder");
+        subtitle.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        subtitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        subtitle.setText("Your Personal Record Recorder");
 
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("To View or Record Your Personal Record");
+        directions_2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        directions_2.setText("To View or Record Your Personal Record");
 
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Chose a Lift or a WOD");
+        directions_1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        directions_1.setText("Chose a Lift or a WOD");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -169,9 +175,9 @@ public class PR2 extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(pr2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2)
+                    .addComponent(subtitle)
+                    .addComponent(directions_1)
+                    .addComponent(directions_2)
                     .addComponent(close)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lift, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -185,11 +191,11 @@ public class PR2 extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addComponent(pr2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(49, 49, 49)
-                .addComponent(jLabel1)
+                .addComponent(subtitle)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel3)
+                .addComponent(directions_1)
                 .addGap(16, 16, 16)
-                .addComponent(jLabel2)
+                .addComponent(directions_2)
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lift, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -248,28 +254,7 @@ public class PR2 extends javax.swing.JFrame {
    
 
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PR2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PR2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PR2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PR2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -282,12 +267,12 @@ public class PR2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton close;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel directions_1;
+    private javax.swing.JLabel directions_2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JComboBox lift;
     private javax.swing.JLabel pr2;
+    private javax.swing.JLabel subtitle;
     private javax.swing.JComboBox wod;
     // End of variables declaration//GEN-END:variables
 }
