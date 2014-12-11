@@ -1,5 +1,11 @@
 
-/**
+/** 
+ * PR2 (Personal Record Recorder) An application created to record personal
+ * records of CrossFit athletes Created by Luis Dall, Tracy Devault and Stephen
+ * Blackburn Group 1: CMSC 495 7981 Current Trends and Projects in Computer
+ * Science (2148) 
+ * Instructor: Dr. Hung Dao
+ * 
  * Lift.java class creates a Lift object and a the lift GUI for the user
  * interaction with the Lift object
  *
@@ -32,9 +38,7 @@ public class Lift extends javax.swing.JFrame implements Serializable {
         this.oneRepMax = oneRepMax;
     }
 
-    /**
-     * Accessors and Mutators
-     */
+    
     /**
      * Accessors and Mutators
      *
@@ -59,7 +63,7 @@ public class Lift extends javax.swing.JFrame implements Serializable {
     /**
      * The toString method returns a string containing the Lift's data.
      *
-     * @return a refernce to the a string
+     * @return a reference to the a string
      */
     @Override
     public String toString() {
@@ -92,15 +96,15 @@ public class Lift extends javax.swing.JFrame implements Serializable {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        Change_Btn = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        current1RMDisplay = new javax.swing.JLabel();
+        incrementedPercentages_Label = new javax.swing.JLabel();
+        liftUpdate_Btn = new javax.swing.JButton();
+        liftReturnToMain = new javax.swing.JButton();
         displayName = new javax.swing.JLabel();
         displayOneRepMax = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        changeRM = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        enterNew1RM_Label = new javax.swing.JLabel();
+        new1RM_TextField = new javax.swing.JTextField();
+        incrementedPercentages_Display = new javax.swing.JScrollPane();
         displayIncrements = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -114,48 +118,49 @@ public class Lift extends javax.swing.JFrame implements Serializable {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Current 1RM");
+        current1RMDisplay.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        current1RMDisplay.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        current1RMDisplay.setText("Current 1RM");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Incremented Percentages");
+        incrementedPercentages_Label.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        incrementedPercentages_Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        incrementedPercentages_Label.setText("Incremented Percentages");
 
-        Change_Btn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        Change_Btn.setText("Update");
-        Change_Btn.addMouseListener(new java.awt.event.MouseAdapter() {
+        liftUpdate_Btn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        liftUpdate_Btn.setText("Update");
+        liftUpdate_Btn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Change_BtnMouseClicked(evt);
+                liftUpdate_BtnMouseClicked(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton3.setText("Return to Main Menu");
-        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+        liftReturnToMain.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        liftReturnToMain.setText("Return to Main Menu");
+        liftReturnToMain.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton3MouseClicked(evt);
+                liftReturnToMainMouseClicked(evt);
             }
         });
 
         displayName.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
         displayName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        displayName.setText("jLabel5");
         displayName.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         displayOneRepMax.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         displayOneRepMax.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         displayOneRepMax.setText("jLabel6");
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel5.setText("Enter New 1RM");
+        enterNew1RM_Label.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        enterNew1RM_Label.setText("Enter New 1RM");
 
-        changeRM.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        new1RM_TextField.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
 
         displayIncrements.setEditable(false);
         displayIncrements.setColumns(20);
         displayIncrements.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         displayIncrements.setRows(5);
-        jScrollPane1.setViewportView(displayIncrements);
+        incrementedPercentages_Display.setViewportView(displayIncrements);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -167,19 +172,19 @@ public class Lift extends javax.swing.JFrame implements Serializable {
                         .addGap(159, 159, 159)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                             .addComponent(displayName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(current1RMDisplay, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(displayOneRepMax, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jScrollPane1)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(incrementedPercentages_Label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(incrementedPercentages_Display)
+                            .addComponent(liftReturnToMain, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(158, 158, 158)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(enterNew1RM_Label, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(changeRM, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(new1RM_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Change_Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(liftUpdate_Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(160, 160, 160))
         );
         layout.setVerticalGroup(
@@ -188,21 +193,21 @@ public class Lift extends javax.swing.JFrame implements Serializable {
                 .addContainerGap()
                 .addComponent(displayName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(32, 32, 32)
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(current1RMDisplay, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(displayOneRepMax, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(incrementedPercentages_Label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(incrementedPercentages_Display, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(changeRM, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(new1RM_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(enterNew1RM_Label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Change_Btn)
+                .addComponent(liftUpdate_Btn)
                 .addGap(39, 39, 39)
-                .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(liftReturnToMain, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(96, 96, 96))
         );
 
@@ -211,12 +216,12 @@ public class Lift extends javax.swing.JFrame implements Serializable {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        // TODO add your handling code here:
+
         liftParent.enable(true);
     }//GEN-LAST:event_formWindowClosing
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        // TODO add your handling code here:        
+                
 
         displayName.setText(item); //pass item name
         //populate your data and put them here
@@ -229,16 +234,16 @@ public class Lift extends javax.swing.JFrame implements Serializable {
 
     }//GEN-LAST:event_formWindowOpened
 
-    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
-        // TODO add your handling code here:
+    private void liftReturnToMainMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_liftReturnToMainMouseClicked
+        
         this.dispose();
         liftParent.show();
         liftParent.enable(true);
-    }//GEN-LAST:event_jButton3MouseClicked
+    }//GEN-LAST:event_liftReturnToMainMouseClicked
 
-    private void Change_BtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Change_BtnMouseClicked
+    private void liftUpdate_BtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_liftUpdate_BtnMouseClicked
         // add your code to change 1RM
-        String changeOneRepMax = changeRM.getText();
+        String changeOneRepMax = new1RM_TextField.getText();
         float validate = validate1RM(changeOneRepMax);
         if (validate != 1) {
             return;
@@ -255,7 +260,7 @@ public class Lift extends javax.swing.JFrame implements Serializable {
         displayIncrements.setText(increment); //pass increment         
         displayOneRepMax.setText(ft.get1RM_FT(item)); //pass OneRepMax
         ft.toTextFile();
-    }//GEN-LAST:event_Change_BtnMouseClicked
+    }//GEN-LAST:event_liftUpdate_BtnMouseClicked
 
     //Checking to see if user input is within the predetermined ranges
     public static Integer validate1RM(String text1RM) {
@@ -285,36 +290,7 @@ public class Lift extends javax.swing.JFrame implements Serializable {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /*
-         * Set the Nimbus look and feel
-         */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /*
-         * If Nimbus (introduced in Java SE 6) is not available, stay with the
-         * default look and feel. For details see
-         * http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Lift.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Lift.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Lift.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Lift.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /*
-         * Create and display the form
-         */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             @Override
@@ -324,15 +300,15 @@ public class Lift extends javax.swing.JFrame implements Serializable {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Change_Btn;
-    private javax.swing.JTextField changeRM;
+    private javax.swing.JLabel current1RMDisplay;
     private javax.swing.JTextArea displayIncrements;
     private javax.swing.JLabel displayName;
     private javax.swing.JLabel displayOneRepMax;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel enterNew1RM_Label;
+    private javax.swing.JScrollPane incrementedPercentages_Display;
+    private javax.swing.JLabel incrementedPercentages_Label;
+    private javax.swing.JButton liftReturnToMain;
+    private javax.swing.JButton liftUpdate_Btn;
+    private javax.swing.JTextField new1RM_TextField;
     // End of variables declaration//GEN-END:variables
 }

@@ -36,22 +36,22 @@
                       <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="2" attributes="0">
                           <Component id="displayName" alignment="2" max="32767" attributes="0"/>
-                          <Component id="jLabel2" alignment="2" max="32767" attributes="0"/>
+                          <Component id="current1RMDisplay" alignment="2" max="32767" attributes="0"/>
                           <Component id="displayOneRepMax" alignment="2" max="32767" attributes="0"/>
-                          <Component id="jLabel3" alignment="2" max="32767" attributes="0"/>
-                          <Component id="jScrollPane1" alignment="2" max="32767" attributes="0"/>
-                          <Component id="jButton3" alignment="2" min="-2" pref="256" max="-2" attributes="0"/>
+                          <Component id="incrementedPercentages_Label" alignment="2" max="32767" attributes="0"/>
+                          <Component id="incrementedPercentages_Display" alignment="2" max="32767" attributes="0"/>
+                          <Component id="liftReturnToMain" alignment="2" min="-2" pref="256" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="158" max="-2" attributes="0"/>
-                      <Component id="jLabel5" min="-2" pref="123" max="-2" attributes="0"/>
+                      <Component id="enterNew1RM_Label" min="-2" pref="123" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="changeRM" min="-2" pref="275" max="-2" attributes="0"/>
+                      <Component id="new1RM_TextField" min="-2" pref="275" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="Change_Btn" min="-2" pref="98" max="-2" attributes="0"/>
+                      <Component id="liftUpdate_Btn" min="-2" pref="98" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="160" max="-2" attributes="0"/>
@@ -64,29 +64,29 @@
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Component id="displayName" max="32767" attributes="0"/>
               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-              <Component id="jLabel2" max="32767" attributes="0"/>
+              <Component id="current1RMDisplay" max="32767" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Component id="displayOneRepMax" max="32767" attributes="0"/>
               <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-              <Component id="jLabel3" max="32767" attributes="0"/>
+              <Component id="incrementedPercentages_Label" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" pref="122" max="-2" attributes="0"/>
+              <Component id="incrementedPercentages_Display" min="-2" pref="122" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="changeRM" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
-                  <Component id="jLabel5" alignment="3" max="32767" attributes="0"/>
+                  <Component id="new1RM_TextField" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                  <Component id="enterNew1RM_Label" alignment="3" max="32767" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="Change_Btn" min="-2" max="-2" attributes="0"/>
+              <Component id="liftUpdate_Btn" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-              <Component id="jButton3" max="32767" attributes="0"/>
+              <Component id="liftReturnToMain" max="32767" attributes="0"/>
               <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="current1RMDisplay">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="18" style="1"/>
@@ -95,7 +95,7 @@
         <Property name="text" type="java.lang.String" value="Current 1RM"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="incrementedPercentages_Label">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="12" style="1"/>
@@ -104,7 +104,7 @@
         <Property name="text" type="java.lang.String" value="Incremented Percentages"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="Change_Btn">
+    <Component class="javax.swing.JButton" name="liftUpdate_Btn">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="12" style="1"/>
@@ -112,10 +112,10 @@
         <Property name="text" type="java.lang.String" value="Update"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Change_BtnMouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="liftUpdate_BtnMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="liftReturnToMain">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="12" style="1"/>
@@ -123,7 +123,7 @@
         <Property name="text" type="java.lang.String" value="Return to Main Menu"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton3MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="liftReturnToMainMouseClicked"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="displayName">
@@ -145,7 +145,7 @@
         <Property name="text" type="java.lang.String" value="jLabel6"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
+    <Component class="javax.swing.JLabel" name="enterNew1RM_Label">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
@@ -153,14 +153,14 @@
         <Property name="text" type="java.lang.String" value="Enter New 1RM"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="changeRM">
+    <Component class="javax.swing.JTextField" name="new1RM_TextField">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="12" style="1"/>
         </Property>
       </Properties>
     </Component>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+    <Container class="javax.swing.JScrollPane" name="incrementedPercentages_Display">
       <AuxValues>
         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
       </AuxValues>
