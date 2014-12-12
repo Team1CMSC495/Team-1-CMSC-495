@@ -180,7 +180,7 @@ public class Lift extends javax.swing.JFrame implements Serializable {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(158, 158, 158)
                         .addComponent(enterNew1RM_Label, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 179, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 129, Short.MAX_VALUE)
                         .addComponent(new1RM_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -191,13 +191,13 @@ public class Lift extends javax.swing.JFrame implements Serializable {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(displayName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(displayName, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)
                 .addGap(32, 32, 32)
-                .addComponent(current1RMDisplay, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(current1RMDisplay, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(displayOneRepMax, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(displayOneRepMax, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addComponent(incrementedPercentages_Label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(incrementedPercentages_Label, javax.swing.GroupLayout.DEFAULT_SIZE, 18, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(incrementedPercentages_Display, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -207,11 +207,11 @@ public class Lift extends javax.swing.JFrame implements Serializable {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(liftUpdate_Btn)
                 .addGap(39, 39, 39)
-                .addComponent(liftReturnToMain, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(82, 82, 82))
+                .addComponent(liftReturnToMain, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+                .addGap(96, 96, 96))
         );
 
-        setSize(new java.awt.Dimension(895, 574));
+        setSize(new java.awt.Dimension(845, 603));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -227,7 +227,7 @@ public class Lift extends javax.swing.JFrame implements Serializable {
         //populate your data and put them here
         DecimalFormat df = new DecimalFormat("#.##");
         int in = Integer.parseInt(ft.get1RM_FT(item));
-        String increment = "95%  " + df.format(0.95 * in) + "\t" + "70%  " + df.format(0.70 * in) + "\n90%  " + df.format(0.90 * in) + "\t" + "65%  " + df.format(0.65 * in) + "\n85%  " + df.format(0.85 * in) + "\t" + "60%  " + df.format(0.60 * in) + "\n80%  " + df.format(0.80 * in) + "\t" + "55%  " + df.format(0.55 * in) + "\n75%  " + df.format(0.75 * in) + "\t" + "50%  " + df.format(0.50 * in);
+        String increment = "\t95%  " + df.format(0.95 * in) + "\t\t\t" + "70%  " + df.format(0.70 * in) + "\n\t90%  " + df.format(0.90 * in) + "\t\t\t" + "65%  " + df.format(0.65 * in) + "\n\t85%  " + df.format(0.85 * in) + "\t\t\t" + "60%  " + df.format(0.60 * in) + "\n\t80%  " + df.format(0.80 * in) + "\t\t\t" + "55%  " + df.format(0.55 * in) + "\n\t75%  " + df.format(0.75 * in) + "\t\t\t" + "50%  " + df.format(0.50 * in);
 
         displayIncrements.setText(increment); //pass increment  
         displayOneRepMax.setText(ft.get1RM_FT(item)); //pass OneRepMax
@@ -256,7 +256,7 @@ public class Lift extends javax.swing.JFrame implements Serializable {
         }
         DecimalFormat df = new DecimalFormat("#.##");
         float in = Float.parseFloat(changeOneRepMax);
-        String increment = "95%  " + df.format(0.95 * in) + "\t" + "70%  " + df.format(0.70 * in) + "\n90%  " + df.format(0.90 * in) + "\t" + "65%  " + df.format(0.65 * in) + "\n85%  " + df.format(0.85 * in) + "\t" + "60%  " + df.format(0.60 * in) + "\n80%  " + df.format(0.80 * in) + "\t" + "55%  " + df.format(0.55 * in) + "\n75%  " + df.format(0.75 * in) + "\t" + "50%  " + df.format(0.50 * in);
+        String increment = "\t95%  " + df.format(0.95 * in) + "\t\t\t" + "70%  " + df.format(0.70 * in) + "\n\t90%  " + df.format(0.90 * in) + "\t\t\t" + "65%  " + df.format(0.65 * in) + "\n\t85%  " + df.format(0.85 * in) + "\t\t\t" + "60%  " + df.format(0.60 * in) + "\n\t80%  " + df.format(0.80 * in) + "\t\t\t" + "55%  " + df.format(0.55 * in) + "\n\t75%  " + df.format(0.75 * in) + "\t\t\t" + "50%  " + df.format(0.50 * in);
         displayIncrements.setText(increment); //pass increment         
         displayOneRepMax.setText(ft.get1RM_FT(item)); //pass OneRepMax
         ft.toTextFile();
