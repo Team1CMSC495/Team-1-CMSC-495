@@ -180,7 +180,7 @@ public class Lift extends javax.swing.JFrame implements Serializable {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(158, 158, 158)
                         .addComponent(enterNew1RM_Label, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 179, Short.MAX_VALUE)
                         .addComponent(new1RM_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -208,10 +208,10 @@ public class Lift extends javax.swing.JFrame implements Serializable {
                 .addComponent(liftUpdate_Btn)
                 .addGap(39, 39, 39)
                 .addComponent(liftReturnToMain, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(96, 96, 96))
+                .addGap(82, 82, 82))
         );
 
-        setSize(new java.awt.Dimension(722, 581));
+        setSize(new java.awt.Dimension(895, 574));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
