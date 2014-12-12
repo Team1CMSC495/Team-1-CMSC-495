@@ -3,31 +3,31 @@
 // : November 23, 2014
 // : Lift format
 // : l :<name>:<1 rep max>
-l : Back squat : 25
-l : Bench press : 55
-l : Clean : 27
-l : Clean and jerk : 28
-l : Clean high pull : 29
+l : Back squat : 30
+l : Bench press : 30
+l : Clean : 30
+l : Clean and jerk : 30
+l : Clean high pull : 30
 l : Deadlift : 30
-l : Front squat : 31
-l : Hang clean : 32
-l : Hang snatch : 33
-l : Hang squat clean : 34
-l : Hang Squat snatch : 35
-l : Power clean : 36
-l : Power clean and jerk : 37
-l : Power snatch : 38
-l : Push jerk : 39
-l : Push press : 40
-l : Shoulder press : 41
-l : Split jerk : 42
-l : Squat clean : 43
-l : Squat clean and jerk : 44
-l : Squat snatch : 45
-l : Strict press : 46
-l : Sumo deadlift : 47
-l : Sumo deadlift high-pull : 48
-l : Thrusters : 49
+l : Front squat : 30
+l : Hang clean : 30
+l : Hang snatch : 30
+l : Hang squat clean : 30
+l : Hang Squat snatch : 30
+l : Power clean : 30
+l : Power clean and jerk : 30
+l : Power snatch : 30
+l : Push jerk : 30
+l : Push press : 30
+l : Shoulder press : 30
+l : Split jerk : 30
+l : Squat clean : 30
+l : Squat clean and jerk : 30
+l : Squat snatch : 30
+l : Strict press : 30
+l : Sumo deadlift : 30
+l : Sumo deadlift high-pull : 30
+l : Thrusters : 30
 // : WOD format
 // : w :<name>:<hour>:<minute>:<second>
 // :  name            hour  minute   second
@@ -138,4 +138,4 @@ w : Whitten : 0 : 0 : 0 : Five rounds for time of-22 Kettlebell swings; 2 pood-2
 w : Wilmot : 0 : 0 : 0 : Six rounds for time of-50 Squats-25 Ring dips :  : www.crossfit.com/mt-archive2/007642.html
 w : Wittman : 0 : 0 : 0 : "Seven rounds for time of-1.5 pood Kettlebell swing; 15 reps-95 pound Power clean; 15 reps-15 Box jumps; 24"" box" :  : www.crossfit.com/mt-archive2/007434.html
 w : Wood : 0 : 0 : 0 : "5 Rounds for time of-Run 400 meters-10 Burpee box jumps; 24"" box-95 pound Sumo deadlift highpull; 10 reps-95 pound Thruster; 10 reps-Rest 1 minute" :  : www.crossfit.com/mt-archive2/008043.html
-// : Last Update was = 12/02/2014 21:07:08
+// : Last Update was = 12/11/2014 21:08:10
